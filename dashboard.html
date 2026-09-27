@@ -167,6 +167,126 @@
        MAIN LAYOUT
     =================================================== */
     .db-wrap{padding-top:68px;min-height:100vh}
+    /* Reviews stays compact. Account, security and support use the same
+       full-height dashboard canvas as the main view. */
+    body.view-reviews-active .db-wrap{min-height:0}
+    body.view-reviews-active .db-content{padding-bottom:24px}
+    .db-bg{position:fixed;inset:0;background:radial-gradient(ellipse 70% 50% at 10% 10%,rgba(0,230,118,.05) 0%,transparent 60%),radial-gradient(ellipse 60% 70% at 90% 90%,rgba(79,195,247,.04) 0%,transparent 60%),linear-gradient(180deg,#060d1f 0%,#070f24 100%);pointer-events:none;z-index:0}
+    .db-content{position:relative;z-index:1;padding:32px 0 72px;animation:fadeIn .45s ease}
+
+    /* ─── SUSPENSION VIEW ─── */
+    .suspension-card{max-width:560px;margin:60px auto;padding:48px 36px;background:rgba(15,30,58,.78);border:1px solid rgba(255,80,80,.28);border-radius:20px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.45);animation:fadeIn .5s ease}
+    .suspension-icon{font-size:3.4rem;margin-bottom:14px;line-height:1}
+    .suspension-title{font-family:'DM Serif Display',serif;font-size:clamp(1.4rem,2.6vw,1.85rem);color:#ff8585;margin-bottom:12px;line-height:1.2}
+    .suspension-sub{font-size:.95rem;color:#a8c0dc;margin-bottom:24px;line-height:1.55}
+    .suspension-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}
+    .suspension-foot{font-size:.72rem;color:inherit;border-top:1px solid rgba(79,195,247,.08);padding-top:14px}
+
+    /* Section heading style */
+    .sec-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+    .sec-heading{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a8c0dc;display:flex;align-items:center;gap:8px}
+    .sec-heading::after{content:'';flex:1;height:1px;background:rgba(79,195,247,.1);display:none}
+
+    /* Dashboard section rhythm — generous, even spacing between blocks */
+    .db-section{margin-bottom:34px}
+    .db-section:last-child{margin-bottom:10px}
+
+    /* ===================================================
+       WELCOME SECTION — compact header, two primary actions
+    =================================================== */
+    .welcome-section{padding:26px 0 22px;margin-bottom:32px;border-bottom:1px solid rgba(79,195,247,.07)}
+    .welcome-inner{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+    .welcome-greeting{font-family:'DM Serif Display',serif;font-size:clamp(1.55rem,2.9vw,2.05rem);line-height:1.15;margin-bottom:6px}
+    .welcome-sub{font-size:.88rem;color:#6b88aa}
+    .welcome-actions{display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0}
+
+    /* ===================================================
+       STAT CARDS — subtle glass tiles, one row of four
+    =================================================== */
+    .stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .stat-card{background:rgba(15,30,58,.6);border:1px solid rgba(79,195,247,.09);border-radius:14px;padding:18px;transition:border-color .25s,background .25s}
+    .stat-card:hover{border-color:rgba(0,230,118,.2);background:rgba(17,34,66,.7)}
+    .stat-card-top{display:flex;align-items:center;gap:9px;margin-bottom:14px}
+    .stat-name{font-size:.78rem;font-weight:600;color:#a8c0dc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .stat-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+    .si-green{background:rgba(0,230,118,.12)}
+    .si-blue{background:rgba(79,195,247,.12)}
+    .si-purple{background:rgba(206,147,216,.12)}
+    .si-orange{background:rgba(255,183,77,.12)}
+    .si-teal{background:rgba(128,203,196,.12)}
+    .stat-trend{font-size:.7rem;font-weight:700;padding:2px 7px;border-radius:5px}
+    .trend-up{background:rgba(0,230,118,.12);color:#00e676}
+    .trend-dn{background:rgba(239,154,154,.12);color:#ef9a9a}
+    .stat-val{font-family:'JetBrains Mono',monospace;font-size:1.7rem;font-weight:600;line-height:1;margin-bottom:6px;color:#e2ecff}
+    .stat-lbl{font-size:.7rem;color:#6b88aa;font-weight:500}
+
+    /* ===================================================
+       QUICK ACTIONS — compact horizontal cards
+    =================================================== */
+    .qa-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .qa-card{background:rgba(15,30,58,.6);border:1px solid rgba(79,195,247,.09);border-radius:14px;padding:16px 18px;display:flex;align-items:center;gap:14px;text-align:left;width:100%;cursor:pointer;transition:border-color .25s,background .25s;color:inherit;text-decoration:none;font-family:'Outfit',sans-serif}
+    .qa-card:hover{border-color:rgba(0,230,118,.26);background:rgba(17,34,66,.72)}
+    .qa-ico{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
+    .qa-ico-green{background:rgba(0,230,118,.12)}
+    .qa-ico-blue{background:rgba(79,195,247,.12)}
+    .qa-ico-purple{background:rgba(206,147,216,.12)}
+    .qa-ico-orange{background:rgba(255,183,77,.12)}
+    .qa-body{min-width:0}
+    .qa-title{font-size:.88rem;font-weight:700;margin-bottom:3px;color:#e2ecff}
+    .qa-desc{font-size:.75rem;color:#6b88aa;line-height:1.45}
+
+    /* ===================================================
+       GRID LAYOUTS
+    =================================================== */
+    .two-col{display:grid;grid-template-columns:min:5px;background:none;border:none;cursor:pointer;padding:4px;margin-left:4px}
+    .nav-toggle span{display:block;width:22px;height:2px;background:#e2ecff;border-radius:2px;transition:all .3s}
+
+    /* ===================================================
+       PROFILE DROPDOWN
+    =================================================== */
+    .profile-dropdown{position:absolute;top:calc(100% + 12px);right:0;width:230px;background:rgba(10,22,50,.98);backdrop-filter:blur(20px);border:1px solid rgba(79,195,247,.2);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.7);padding:10px;display:none;flex-direction:column;gap:3px;z-index:999;animation:slideDown .2s ease-out forwards}
+    .profile-dropdown.open{display:flex}
+    .pd-header{display:flex;align-items:center;gap:10px;padding:8px 8px 10px;border-bottom:1px solid rgba(79,195,247,.1);margin-bottom:4px}
+    .pd-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#00e676,#00c853);color:#060d1f;font-weight:800;font-size:.82rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+    .pd-avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+    .pd-name{font-size:.88rem;font-weight:700;color:#e2ecff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .pd-email{font-size:.72rem;color:#6b88aa;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .pd-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;color:#a8c0dc;font-size:.85rem;font-weight:500;cursor:pointer;transition:all .18s;background:transparent;border:none;width:100%;text-align:left}
+    .pd-item:hover{background:rgba(0,230,118,.1);color:#00e676}
+    .pd-item-danger{color:#ff6b6b}
+    .pd-item-danger:hover{background:rgba(255,80,80,.1);color:#ff8585}
+    .pd-divider{height:1px;background:rgba(79,195,247,.1);margin:4px 0}
+    .pd-status{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:9999px;font-size:.6rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;vertical-align:middle;background:rgba(0,230,118,.14);color:#00e676;border:1px solid rgba(0,230,118,.3)}
+    .pd-status.suspended{background:rgba(255,80,80,.12);color:#ff6b6b;border-color:rgba(255,80,80,.3)}
+    .pd-footer{margin-top:4px;padding-top:8px;border-top:1px solid rgba(79,195,247,.12);text-align:center;font-size:.72rem;letter-spacing:.04em;color:inherit;font-weight:400}
+
+    /* ===================================================
+       NOTIFICATION PANEL
+    =================================================== */
+    .notif-panel{position:absolute;top:calc(100% + 12px);right:0;width:350px;background:rgba(10,22,50,.98);backdrop-filter:blur(20px);border:1px solid rgba(79,195,247,.2);border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.7);display:none;flex-direction:column;z-index:999;animation:slideDown .2s ease-out forwards;overflow:hidden}
+    .notif-panel.open{display:flex}
+    .notif-panel-hdr{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-bottom:1px solid rgba(79,195,247,.1)}
+    .notif-panel-title{font-size:.9rem;font-weight:700;display:flex;align-items:center;gap:8px}
+    .notif-unread-count{font-size:.65rem;font-weight:700;background:rgba(255,107,107,.2);color:#ff6b6b;border-radius:9999px;padding:2px 7px}
+    .mark-read-btn{font-size:.75rem;color:#00e676;cursor:pointer;background:none;border:none;font-weight:600;font-family:'Outfit',sans-serif}
+    .mark-read-btn:hover{text-decoration:underline}
+    .notif-list{max-height:380px;overflow-y:auto}
+    .notif-item{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border-bottom:1px solid rgba(79,195,247,.06);transition:background .2s;cursor:pointer}
+    .notif-item:last-child{border-bottom:none}
+    .notif-item.unread{background:rgba(0,230,118,.03)}
+    .notif-item:hover{background:rgba(79,195,247,.05)}
+    .notif-dot{width:8px;height:8px;border-radius:50%;background:#00e676;flex-shrink:0;margin-top:5px;transition:all .2s}
+    .notif-dot.read{background:rgba(107,136,170,.3)}
+    .notif-content{flex:1;min-width:0}
+    .notif-text{font-size:.82rem;color:#a8c0dc;line-height:1.55}
+    .notif-text strong{color:#e2ecff}
+    .notif-time{font-size:.7rem;color:#6b88aa;margin-top:3px;font-family:'JetBrains Mono',monospace}
+    .notif-icon{font-size:1.1rem;flex-shrink:0;margin-top:1px}
+
+    /* ===================================================
+       MAIN LAYOUT
+    =================================================== */
+    .db-wrap{padding-top:68px;min-height:100vh}
     /* The security, support and reviews pages are short by design: hold the
        viewport open with the fixed background instead of the content wrapper, so
        the footer follows the last card instead of a screen of empty space. */
