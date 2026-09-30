@@ -1,0 +1,50 @@
+# ============================================================
+# SaveHatke AI — secrets and build artefacts
+# Never commit credentials.
+# ============================================================
+
+# Environment files — real values live here, never in git.
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.env.local
+
+# Service-account key files downloaded from Google Cloud.
+*service-account*.json
+*serviceaccount*.json
+gcp-key*.json
+key.json
+credentials.json
+
+# Dependencies
+node_modules/
+
+# Vercel — link/build state. NEVER commit: it binds this folder to a Vercel
+# project, and committing it could point deploys at the wrong project.
+.vercel/
+.vercel
+
+# Agent tooling / local notes — not part of the deployed app.
+.workbuddy-ai/
+
+# Local dev / test artefacts
+shots/
+*.png.tmp
+capture-*.png
+npm-debug.log*
+yarn-error.log*
+*.log
+
+# Whitelist stub written by verify.mjs during end-to-end runs
+tests/.whitelist.stub.json
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+.vercel
+.env*

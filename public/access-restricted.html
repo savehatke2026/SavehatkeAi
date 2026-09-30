@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Access restricted — SaveHatke AI</title>
+  <meta name="description" content="This Google account is not authorized for SaveHatke AI.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#060d1f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-page">
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="SaveHatke AI home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="28" height="28" rx="8" fill="#00e676"/>
+          <path d="M10 11.6a6 6 0 0 1 12 0V17a6 6 0 0 1-4.7 5.86l-.5 1.64a.9.9 0 0 1-1.6 0l-.5-1.64A6 6 0 0 1 10 17v-5.4Z" fill="#fff"/>
+          <circle cx="13.2" cy="14" r="1.3" fill="#00e676"/>
+          <circle cx="18.8" cy="14" r="1.3" fill="#00e676"/>
+        </svg>
+        <span class="brand-name">SaveHatke<em>&nbsp;AI</em></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <div class="auth-head">
+        <div class="notice-icon notice-icon-lg" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+        </div>
+        <h1 class="auth-title" id="denial-title">Access restricted</h1>
+        <p class="auth-sub" id="denial-message">This Google account is not authorized for SaveHatke AI.</p>
+      </div>
+
+      <dl class="dl" id="denial-detail" hidden>
+        <div class="dl-row"><dt>Signed in as</dt><dd id="denial-email">—</dd></div>
+      </dl>
+
+      <div class="auth-actions">
+        <a class="btn btn-primary btn-block" href="index.html">Back to home</a>
+        <button class="btn btn-secondary btn-block" type="button" id="switch-account">Sign Out</button>
+      </div>
+
+      <p class="auth-fine">
+        Access is limited to approved accounts. If you believe this is a mistake,
+        contact an administrator to have your email added to the whitelist.
+      </p>
+    </div>
+  </main>
+
+  <script src="core.js" defer></script>
+  <script src="restricted.js" defer></script>
+</body>
+</html>

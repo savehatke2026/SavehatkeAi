@@ -1,0 +1,26 @@
+# ============================================================
+# Files NOT uploaded to Vercel. Keeps deployments lean; excludes only
+# local-dev and test tooling. Nothing here is imported by api/** at
+# runtime, nor served from public/, nor pinned by functions.includeFiles
+# in vercel.json (server/models/**, data/ai/knowledge.json,
+# data/ai/responses.json remain included).
+# ============================================================
+
+# Local dev servers (production uses Vercel's runtime, not these).
+dev-server.mjs
+server.cjs
+
+# Test + visual-review tooling.
+tests/
+shots/
+verify.mjs
+
+# AI training/eval pipeline — offline only; the trained artefacts under
+# server/models/ai/** are what runtime needs, and those are kept.
+scripts/
+
+# Agent tooling / local notes.
+.workbuddy-ai/
+
+# Docs (not needed by the running app).
+AUTH-SETUP.md

@@ -1,0 +1,77 @@
+{"text": "good to see you", "intent": "GREETING"}
+{"text": "hiya", "intent": "GREETING"}
+{"text": "hello there my friend", "intent": "GREETING"}
+{"text": "catch you soon", "intent": "GOODBYE"}
+{"text": "i will log off now", "intent": "GOODBYE"}
+{"text": "thats it for now", "intent": "GOODBYE"}
+{"text": "much appreciated", "intent": "THANKS"}
+{"text": "thanks for sorting that out", "intent": "THANKS"}
+{"text": "kya aap meri madad kar sakte hain", "intent": "GENERAL_HELP"}
+{"text": "what sort of things can you help with", "intent": "GENERAL_HELP"}
+{"text": "tell me what you are capable of", "intent": "GENERAL_HELP"}
+{"text": "i would like to buy one of these coupons", "intent": "BUY_COUPON"}
+{"text": "what do i need to do to purchase", "intent": "BUY_COUPON"}
+{"text": "how can i make a purchase here", "intent": "BUY_COUPON"}
+{"text": "are there any nike coupons available", "intent": "SEARCH_COUPON"}
+{"text": "let me see what deals you have", "intent": "SEARCH_COUPON"}
+{"text": "can you pull up coupons for zomato", "intent": "SEARCH_COUPON"}
+{"text": "i need something cheaper than 300", "intent": "SEARCH_COUPON"}
+{"text": "what is the face value of that listing", "intent": "COUPON_DETAILS"}
+{"text": "how long is that coupon good for", "intent": "COUPON_DETAILS"}
+{"text": "give me the specifics on the ajio one", "intent": "COUPON_DETAILS"}
+{"text": "i would like to list a coupon for sale", "intent": "SELL_COUPON"}
+{"text": "what is the procedure for putting a coupon up for sale", "intent": "SELL_COUPON"}
+{"text": "mujhe apna coupon bechna hai", "intent": "SELL_COUPON"}
+{"text": "do i qualify to become a seller", "intent": "SELL_ELIGIBILITY"}
+{"text": "is there a minimum requirement before i can sell", "intent": "SELL_ELIGIBILITY"}
+{"text": "am i permitted to sell coupons yet", "intent": "SELL_ELIGIBILITY"}
+{"text": "what happened to the coupon i sent in", "intent": "SUBMISSION_STATUS"}
+{"text": "has my listing been reviewed yet", "intent": "SUBMISSION_STATUS"}
+{"text": "tell me why my submission was turned down", "intent": "SUBMISSION_STATUS"}
+{"text": "what is my total income so far", "intent": "EARNINGS"}
+{"text": "how much money have my coupons brought in", "intent": "EARNINGS"}
+{"text": "kitna paisa bana hai ab tak", "intent": "EARNINGS"}
+{"text": "how much can i earn from a single sale", "intent": "EARNINGS"}
+{"text": "how do i make money on this site", "intent": "EARNINGS"}
+{"text": "has my money been transferred yet", "intent": "PAYOUT_STATUS"}
+{"text": "i have not received my payment", "intent": "PAYOUT_STATUS"}
+{"text": "payout kab tak aayega", "intent": "PAYOUT_STATUS"}
+{"text": "explain the payout tiers to me", "intent": "PAYOUT_LADDER"}
+{"text": "how frequently do payouts happen", "intent": "PAYOUT_LADDER"}
+{"text": "what balance do i need before i get paid", "intent": "PAYOUT_LADDER"}
+{"text": "let me see everything i have bought", "intent": "PURCHASE_HISTORY"}
+{"text": "what are my previous orders", "intent": "PURCHASE_HISTORY"}
+{"text": "was my order successful", "intent": "PURCHASE_HISTORY"}
+{"text": "has the support team answered me", "intent": "SUPPORT_TICKETS"}
+{"text": "show me the complaints i have raised", "intent": "SUPPORT_TICKETS"}
+{"text": "i would like to open a support request", "intent": "SUPPORT_TICKETS"}
+{"text": "can you watch a product price for me", "intent": "PRICE_TRACKER"}
+{"text": "how do i get told about a price cut", "intent": "PRICE_TRACKER"}
+{"text": "i want to follow the price of something", "intent": "PRICE_TRACKER"}
+{"text": "there is a problem with my login", "intent": "ACCOUNT"}
+{"text": "how do i close my account", "intent": "ACCOUNT"}
+{"text": "my access seems to have been removed", "intent": "ACCOUNT"}
+{"text": "i would like to change my display name", "intent": "PROFILE"}
+{"text": "how do i update my personal information", "intent": "PROFILE"}
+{"text": "can i change the photo on my account", "intent": "PROFILE"}
+{"text": "how safe is my information here", "intent": "SECURITY"}
+{"text": "what happens to my data", "intent": "SECURITY"}
+{"text": "i am worried someone else got into my account", "intent": "SECURITY"}
+{"text": "how do i switch on two step verification", "intent": "TWO_FACTOR_AUTH"}
+{"text": "my authenticator codes are being rejected", "intent": "TWO_FACTOR_AUTH"}
+{"text": "where do i manage two factor", "intent": "TWO_FACTOR_AUTH"}
+{"text": "the website is not responding", "intent": "MAINTENANCE"}
+{"text": "is there downtime happening now", "intent": "MAINTENANCE"}
+{"text": "everything is showing an error page", "intent": "MAINTENANCE"}
+{"text": "i would like my money returned", "intent": "REFUND"}
+{"text": "how do i claim a refund for a bad coupon", "intent": "REFUND"}
+{"text": "i was billed two times", "intent": "REFUND"}
+{"text": "can you explain the whole concept", "intent": "HOW_IT_WORKS"}
+{"text": "what exactly does this platform do", "intent": "HOW_IT_WORKS"}
+{"text": "give me a rundown of how everything fits together", "intent": "HOW_IT_WORKS"}
+{"text": "is there a list of common questions somewhere", "intent": "FAQ"}
+{"text": "i want to read the help pages", "intent": "FAQ"}
+{"text": "any general help topics", "intent": "FAQ"}
+{"text": "how do i find the earnings screen", "intent": "WEBSITE_NAVIGATION"}
+{"text": "which link takes me to the coupons", "intent": "WEBSITE_NAVIGATION"}
+{"text": "where exactly is the account section", "intent": "WEBSITE_NAVIGATION"}

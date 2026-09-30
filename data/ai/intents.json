@@ -1,0 +1,719 @@
+{
+  "version": "1.0.0",
+  "note": "Intent metadata for the SaveHatke AI rule layer. `patterns` are high-precision regexes used to boost a classifier result (they never decide alone). `tool` names a toolRouter tool or null. `permission` mirrors toolRouter's permission levels.",
+  "thresholds": {
+    "high": 0.8,
+    "medium": 0.55
+  },
+  "intents": {
+    "GREETING": {
+      "description": "Opening pleasantries.",
+      "patterns": [
+        "^(hi|hey|hello|yo|hii+|namaste|greetings)\\b",
+        "\\bgood (morning|afternoon|evening)\\b",
+        "\\bhow are you\\b",
+        "\\bkaise ho\\b",
+        "\\b(nice|good|great|glad|lovely|pleased) to (see|meet) you\\b",
+        "\\bhow do you do\\b",
+        "\\bwhats up\\b",
+        "\\bhow is it going\\b"
+      ],
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "namaste",
+        "greetings",
+        "morning",
+        "evening"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [],
+      "trainable": true
+    },
+    "GOODBYE": {
+      "description": "Ending the conversation.",
+      "patterns": [
+        "\\b(bye|goodbye|good night)\\b",
+        "\\bsee you\\b",
+        "\\btalk later\\b",
+        "\\b(exit|quit)\\b$",
+        "\\bchalta hu\\b",
+        "\\bthats all\\b",
+        "\\bnothing else\\b",
+        "\\b(farewell|signing off|logging off|gotta go|end chat|close this chat|no more questions|nothing more)\\b",
+        "\\btake care\\b",
+        "\\bbye for now\\b",
+        "\\b(that'?s? (it|all|enough)|that is (it|all|enough))\\b"
+      ],
+      "keywords": [
+        "bye",
+        "goodbye",
+        "later",
+        "exit",
+        "quit"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [],
+      "trainable": true
+    },
+    "THANKS": {
+      "description": "Expressing gratitude.",
+      "patterns": [
+        "\\bthank(s| you|you)\\b",
+        "^\\bthx\\b",
+        "^\\bty\\b",
+        "\\bshukriya\\b",
+        "\\bdhanyavaad\\b",
+        "\\bappreciate it\\b",
+        "\\bappreciat\\w*\\b",
+        "\\bgrateful\\b",
+        "\\bmany thanks\\b",
+        "\\bthank you for\\b"
+      ],
+      "keywords": [
+        "thanks",
+        "thank",
+        "thankyou",
+        "thx",
+        "shukriya",
+        "dhanyavaad"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [],
+      "trainable": true
+    },
+    "GENERAL_HELP": {
+      "description": "Asking what the assistant can do.",
+      "patterns": [
+        "\\bwhat can you do\\b",
+        "\\bhow can you help\\b",
+        "\\bwhat do you do\\b",
+        "\\bwhat are your features\\b",
+        "^help$",
+        "\\bguide me\\b",
+        "\\bkya kar sakte ho\\b",
+        "\\bi need (some )?(help|assistance)\\b",
+        "\\b(abilities|capabilities|capable|able to do)\\b",
+        "\\bassist with\\b",
+        "\\b(services|topics|questions) (do|can) you\\b",
+        "\\bwhat support do you provide\\b",
+        "\\bwhat is your purpose\\b"
+      ],
+      "keywords": [
+        "help",
+        "assist",
+        "features",
+        "capabilities",
+        "guide"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Help"
+      ],
+      "trainable": true
+    },
+    "BUY_COUPON": {
+      "description": "How to buy / purchase a coupon.",
+      "patterns": [
+        "\\bhow (do|can) i (buy|purchase|order|pay)\\b",
+        "\\bi want to (buy|purchase|order)\\b",
+        "\\bbuy(ing)? (a )?coupon\\b",
+        "\\bcoupon kharidna hai\\b",
+        "\\bcoupon buy kar\\b",
+        "\\bsteps to buy\\b"
+      ],
+      "keywords": [
+        "buy",
+        "purchase",
+        "order",
+        "pay",
+        "kharidna",
+        "kharid"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Buying"
+      ],
+      "trainable": true
+    },
+    "SEARCH_COUPON": {
+      "description": "Looking for coupons, brands, categories or price ranges.",
+      "patterns": [
+        "\\b(show|find|search|list|browse|display)\\b.*\\bcoupons?\\b",
+        "\\bany .* coupons\\b",
+        "\\bcoupons? (under|below|less than|above|over)\\b",
+        "\\bdo you have .* coupons\\b",
+        "\\bcoupons? dikhao\\b",
+        "\\bcoupons? dhoondo\\b",
+        "\\bwhich brands do you have\\b",
+        "\\b(cheaper options|what is available right now|all listings|brands are listed)\\b"
+      ],
+      "keywords": [
+        "show",
+        "find",
+        "search",
+        "list",
+        "browse",
+        "coupon",
+        "coupons",
+        "deals",
+        "brand",
+        "dikhao",
+        "available"
+      ],
+      "tool": "search_coupons",
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Buying",
+        "Coupons"
+      ],
+      "trainable": true
+    },
+    "COUPON_DETAILS": {
+      "description": "Details, value or expiry of a specific coupon, often a follow-up to a search.",
+      "patterns": [
+        "\\bcoupon details\\b",
+        "\\bdetails of the .* coupon\\b",
+        "\\b(this|that|the) coupon\\b",
+        "\\bhow much is .* worth\\b",
+        "\\bwhat is the (value|face value)\\b",
+        "\\b(coupon|which one) expire",
+        "\\bwhen does .* expire\\b",
+        "\\bwhich (one|of them)\\b",
+        "\\bis this coupon still valid\\b",
+        "\\btell me about (the )?(first|last|second) one\\b",
+        "\\bcoupon ki details\\b",
+        "\\b(ends soonest|discount value|expired|more info on)\\b"
+      ],
+      "keywords": [
+        "details",
+        "value",
+        "worth",
+        "expire",
+        "expiry",
+        "valid",
+        "terms",
+        "face"
+      ],
+      "tool": "search_coupons",
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Coupons"
+      ],
+      "trainable": true
+    },
+    "SELL_COUPON": {
+      "description": "How to list / sell a coupon.",
+      "patterns": [
+        "\\bhow (do|can) i sell\\b",
+        "\\bi want to sell\\b",
+        "\\bsell (my |a )?coupon\\b",
+        "\\b(how|what) (to|is) (the )?(list|sell|submi)",
+        "\\bcoupon (kaise|bech)",
+        "\\bcoupon bechna hai\\b",
+        "\\bsell kar sakta hu\\b",
+        "\\bstart selling\\b",
+        "\\b(list|put|offer|post)\\b.*\\bcoupons?\\b.*\\b(for sale|on sale|up for sale)\\b",
+        "\\bfor sale\\b"
+      ],
+      "keywords": [
+        "sell",
+        "selling",
+        "list",
+        "upload",
+        "submit",
+        "bechna",
+        "bech"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Selling"
+      ],
+      "trainable": true
+    },
+    "SELL_ELIGIBILITY": {
+      "description": "Whether the caller is allowed to sell.",
+      "patterns": [
+        "\\b(can|am) i (sell|eligible)\\b",
+        "\\bcan i sell\\b",
+        "\\beligib\\w* to sell\\b",
+        "\\bwho can sell\\b",
+        "\\brequirements? to sell\\b",
+        "\\bdo i need a purchase\\b",
+        "\\bwithout buying\\b",
+        "\\bsell kar sakta hu kya\\b",
+        "\\ballowed to sell\\b",
+        "\\b(qualify|permitted|allowed) (as|to|for)\\b",
+        "\\bminimum requirement\\b",
+        "\\bseller requirements\\b",
+        "\\bwhat is needed to sell\\b",
+        "\\bwho is allowed to sell\\b"
+      ],
+      "keywords": [
+        "eligible",
+        "eligibility",
+        "requirement",
+        "allowed",
+        "sell",
+        "qualify"
+      ],
+      "tool": "check_sell_eligibility",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Selling"
+      ],
+      "trainable": true
+    },
+    "SUBMISSION_STATUS": {
+      "description": "Status of a coupon the caller submitted for sale.",
+      "patterns": [
+        "\\b(did|is) my coupon (get )?(approved|rejected)\\b",
+        "\\bsubmission (status|pending)\\b",
+        "\\bstatus of my submission\\b",
+        "\\bcheck my submission\\b",
+        "\\bwhy was my coupon rejected\\b",
+        "\\bmera coupon approve\\b",
+        "\\bhow long does approval take\\b",
+        "\\b(sent in|turned down|declined|accepted|under review|been reviewed|get listed)\\b"
+      ],
+      "keywords": [
+        "submission",
+        "approve",
+        "approved",
+        "rejected",
+        "pending",
+        "review"
+      ],
+      "tool": "check_submissions",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Selling"
+      ],
+      "trainable": true
+    },
+    "EARNINGS": {
+      "description": "How much the caller has earned, and the per-coupon rate.",
+      "patterns": [
+        "\\bhow much (have|did) i earn\\b",
+        "\\bmy earnings\\b",
+        "\\btotal earnings\\b",
+        "\\bearnings (so far|summary)\\b",
+        "\\bhow much money have i made\\b",
+        "\\bper coupon\\b",
+        "\\bearning rate\\b",
+        "\\bkitna kamaya\\b",
+        "\\bmeri earnings\\b",
+        "\\bshow my earnings\\b",
+        "\\b(total income|income so far|earning amount)\\b",
+        "\\bmade from selling\\b",
+        "\\bfor each coupon sold\\b"
+      ],
+      "keywords": [
+        "earn",
+        "earned",
+        "earnings",
+        "kamaya",
+        "income",
+        "rate",
+        "money"
+      ],
+      "tool": "check_earnings",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Earnings"
+      ],
+      "trainable": true
+    },
+    "PAYOUT_STATUS": {
+      "description": "Where the caller's payout is right now.",
+      "patterns": [
+        "\\bwhere is my payout\\b",
+        "\\bpayout (status|pending)\\b",
+        "\\bwhen will i get my payout\\b",
+        "\\bdid my payout\\b",
+        "\\bcheck my payout\\b",
+        "\\bpayout (kab|ka status)\\b",
+        "\\bhave i been paid\\b",
+        "\\bpayout is late\\b",
+        "\\b(been sent|been transferred|not received my payment|money is pending|payment coming|receive the money)\\b"
+      ],
+      "keywords": [
+        "payout",
+        "paid",
+        "payment",
+        "transfer",
+        "milega"
+      ],
+      "tool": "check_payout_status",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Payouts"
+      ],
+      "trainable": true
+    },
+    "PAYOUT_LADDER": {
+      "description": "The payout policy: schedule, tiers and minimums.",
+      "patterns": [
+        "\\bpayout ladder\\b",
+        "\\bhow do payouts work\\b",
+        "\\bpayout (tiers|rules|schedule|policy)\\b",
+        "\\bhow often are payouts\\b",
+        "\\bminimum payout\\b",
+        "\\bwhen do payouts run\\b",
+        "\\bpayout kitne din\\b",
+        "\\bpayout (slab|slabs|cycle|structure|thresholds?)\\b",
+        "\\bpay out\\b",
+        "\\bbalance do i need\\b",
+        "\\bpayout tiers\\b"
+      ],
+      "keywords": [
+        "ladder",
+        "tier",
+        "schedule",
+        "minimum",
+        "threshold",
+        "policy",
+        "how often"
+      ],
+      "tool": "check_payout_ladder",
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Payouts"
+      ],
+      "trainable": true
+    },
+    "PURCHASE_HISTORY": {
+      "description": "The caller's own purchases.",
+      "patterns": [
+        "\\bmy purchase history\\b",
+        "\\bshow my purchases\\b",
+        "\\bdid my purchase go through\\b",
+        "\\b(past|my) orders\\b",
+        "\\border history\\b",
+        "\\bwhat did i buy\\b",
+        "\\bcheck my last purchase\\b",
+        "\\bmeri purchases\\b",
+        "\\blist my transactions\\b"
+      ],
+      "keywords": [
+        "purchase",
+        "purchases",
+        "order",
+        "orders",
+        "bought",
+        "history",
+        "transaction"
+      ],
+      "tool": "check_purchases",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Buying"
+      ],
+      "trainable": true
+    },
+    "SUPPORT_TICKETS": {
+      "description": "The caller's own support tickets.",
+      "patterns": [
+        "\\b(did|has) support (reply|replied|answer)\\b",
+        "\\b(my|check my) (support )?tickets?\\b",
+        "\\bticket (status|update)\\b",
+        "\\bopen tickets\\b",
+        "\\braise a ticket\\b",
+        "\\bcontact support\\b",
+        "\\bmera ticket\\b",
+        "\\bmy complaint\\b"
+      ],
+      "keywords": [
+        "support",
+        "ticket",
+        "tickets",
+        "complaint",
+        "reply",
+        "helpdesk"
+      ],
+      "tool": "check_support_tickets",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Support"
+      ],
+      "trainable": true
+    },
+    "PRICE_TRACKER": {
+      "description": "Price tracking and price alerts.",
+      "patterns": [
+        "\\bprice (tracker|tracking|history|alert|drop|trend)\\b",
+        "\\btrack (a|the|this) (price|product)\\b",
+        "\\bprice drop alert\\b",
+        "\\bset a price alert\\b",
+        "\\bnotify me when the price\\b",
+        "\\bprice track\\b",
+        "\\b(price monitoring|price watch|price notification|price cut|gets cheaper|price falls)\\b"
+      ],
+      "keywords": [
+        "track",
+        "tracker",
+        "tracking",
+        "price",
+        "alert",
+        "drop",
+        "history",
+        "trend"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Price tracker"
+      ],
+      "trainable": true
+    },
+    "ACCOUNT": {
+      "description": "Account-level access, settings and sign-in.",
+      "patterns": [
+        "\\bmy account (balance|status|standing|access|summary|history)\\b",
+        "\\baccount (help|settings|problem|issue)\\b",
+        "\\b(delete|close) my account\\b",
+        "\\bwhy is my account\\b",
+        "\\bcannot access my account\\b",
+        "\\bhow do i sign in\\b",
+        "\\bmera account\\b",
+        "\\b(login is failing|account is locked|problem signing in|cannot get into my account|access has been removed)\\b"
+      ],
+      "keywords": [
+        "account",
+        "sign",
+        "login",
+        "access",
+        "disabled",
+        "delete"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Account"
+      ],
+      "trainable": true
+    },
+    "PROFILE": {
+      "description": "The caller's profile and display details.",
+      "patterns": [
+        "\\b(my|edit|update|change) profile\\b",
+        "\\bprofile (settings|details|picture)\\b",
+        "\\bchange my name\\b",
+        "\\bdisplay name\\b",
+        "\\bmeri profile\\b",
+        "\\b(display name|personal information|change my username|account details)\\b"
+      ],
+      "keywords": [
+        "profile",
+        "name",
+        "avatar",
+        "picture",
+        "details"
+      ],
+      "tool": "get_user_profile",
+      "permission": "AUTHENTICATED_USER",
+      "knowledgeCategories": [
+        "Account"
+      ],
+      "trainable": true
+    },
+    "SECURITY": {
+      "description": "Account security, data protection and privacy.",
+      "patterns": [
+        "\\bis my account secure\\b",
+        "\\bsecurity (settings|help)\\b",
+        "\\bhow do you protect my data\\b",
+        "\\bhow is my data stored\\b",
+        "\\bdata privacy\\b",
+        "\\bdo you share my data\\b",
+        "\\bsomeone logged into my account\\b",
+        "\\baccount (hack|secure)\\b"
+      ],
+      "keywords": [
+        "security",
+        "secure",
+        "privacy",
+        "data",
+        "protect",
+        "hack",
+        "stored"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Security"
+      ],
+      "trainable": true
+    },
+    "TWO_FACTOR_AUTH": {
+      "description": "Two-factor authentication setup and troubleshooting.",
+      "patterns": [
+        "\\b2fa\\b",
+        "\\btwo[- ]?(factor|step)\\b",
+        "\\bauthenticator app\\b",
+        "\\bbackup codes?\\b",
+        "\\b(turn on|enable|disable|set ?up) (2fa|two)"
+      ],
+      "keywords": [
+        "2fa",
+        "twofactor",
+        "otp",
+        "authenticator",
+        "verification",
+        "backup"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Security"
+      ],
+      "trainable": true
+    },
+    "MAINTENANCE": {
+      "description": "Site availability and maintenance windows.",
+      "patterns": [
+        "\\b(is|why is) the (site|website|server) (down|not loading)\\b",
+        "\\bmaintenance\\b",
+        "\\bwhen will the site be back\\b",
+        "\\bsite (is )?not loading\\b",
+        "\\boutage\\b",
+        "\\bwebsite band\\b",
+        "\\b(not responding|downtime|error page|site is broken|website not working|site is unavailable|server error|will not open)\\b"
+      ],
+      "keywords": [
+        "maintenance",
+        "down",
+        "outage",
+        "loading",
+        "offline",
+        "back"
+      ],
+      "tool": "get_maintenance_status",
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Maintenance"
+      ],
+      "trainable": true
+    },
+    "REFUND": {
+      "description": "Refunds and payment disputes.",
+      "patterns": [
+        "\\brefund\\b",
+        "\\bcharged twice\\b",
+        "\\bmy coupon did not work\\b",
+        "\\bpaisa wapas\\b",
+        "\\bmoney back\\b",
+        "\\bbilled two times\\b",
+        "\\bdouble charged\\b",
+        "\\bclaim a refund\\b",
+        "\\bmoney returned\\b"
+      ],
+      "keywords": [
+        "refund",
+        "refunds",
+        "charged",
+        "dispute",
+        "wapas"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Refunds"
+      ],
+      "trainable": true
+    },
+    "HOW_IT_WORKS": {
+      "description": "What SaveHatke is and how the flow works.",
+      "patterns": [
+        "\\bhow does (savehatke|this|it|the marketplace) work\\b",
+        "\\bwhat is savehatke\\b",
+        "\\bexplain how it works\\b",
+        "\\bhow do i get started\\b",
+        "\\bwhat does this (website|site) do\\b",
+        "\\bsavehatke kaise kaam\\b",
+        "\\b(explain the concept|rundown|platform operate|what is this service)\\b",
+        "\\bwhat exactly does this platform do\\b"
+      ],
+      "keywords": [
+        "how",
+        "works",
+        "savehatke",
+        "marketplace",
+        "started",
+        "about"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Overview"
+      ],
+      "trainable": true
+    },
+    "FAQ": {
+      "description": "Requesting the FAQ / common questions.",
+      "patterns": [
+        "\\bfaqs?\\b",
+        "\\bfrequently asked questions\\b",
+        "\\bcommon (questions|problems)\\b",
+        "\\bhelp section\\b",
+        "\\bgeneral questions\\b",
+        "\\b(knowledge base|help documentation|common answers)\\b"
+      ],
+      "keywords": [
+        "faq",
+        "questions",
+        "common",
+        "help section"
+      ],
+      "tool": "search_knowledge",
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "FAQ"
+      ],
+      "trainable": true
+    },
+    "WEBSITE_NAVIGATION": {
+      "description": "Finding a page or feature in the site.",
+      "patterns": [
+        "\\bwhere (is|can i find|do i find)\\b",
+        "\\bhow do i (get|go|reach|navigate)\\b",
+        "\\bwhich page\\b",
+        "\\blink to\\b",
+        "\\bwhere do i\\b",
+        "\\bkaha hai\\b"
+      ],
+      "keywords": [
+        "where",
+        "page",
+        "navigate",
+        "link",
+        "dashboard",
+        "find",
+        "section",
+        "kaha"
+      ],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [
+        "Navigation"
+      ],
+      "trainable": true
+    },
+    "UNKNOWN": {
+      "description": "Assigned by threshold when nothing matches with enough confidence. Never trained on; there are no examples for it.",
+      "patterns": [],
+      "keywords": [],
+      "tool": null,
+      "permission": "PUBLIC",
+      "knowledgeCategories": [],
+      "trainable": false
+    }
+  }
+}

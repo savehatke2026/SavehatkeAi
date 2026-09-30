@@ -1,0 +1,2759 @@
+{
+  "version": "2.0.0",
+  "builtAt": "2026-09-18T14:58:28.177Z",
+  "minDf": 1,
+  "dfUnit": "intent",
+  "documents": 25,
+  "examples": 646,
+  "size": 458,
+  "tokens": {
+    "200": {
+      "id": 1,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "300": {
+      "id": 3,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "500": {
+      "id": 4,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "1000": {
+      "id": 0,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "2fa": {
+      "id": 2,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 6
+    },
+    "aap": {
+      "id": 5,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "aata": {
+      "id": 6,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "aayega": {
+      "id": 7,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ability": {
+      "id": 8,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "able": {
+      "id": 9,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "accepted": {
+      "id": 10,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "access": {
+      "id": 11,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "accessed": {
+      "id": 12,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "account": {
+      "id": 13,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 27
+    },
+    "add": {
+      "id": 14,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "afternoon": {
+      "id": 15,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ai": {
+      "id": 16,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "ajio": {
+      "id": 17,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "alert": {
+      "id": 18,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "all": {
+      "id": 19,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 5
+    },
+    "allow": {
+      "id": 20,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "allowed": {
+      "id": 21,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "amazon": {
+      "id": 22,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "amount": {
+      "id": 23,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "answer": {
+      "id": 24,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "answered": {
+      "id": 25,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "anyone": {
+      "id": 26,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "anything": {
+      "id": 27,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "apna": {
+      "id": 28,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "app": {
+      "id": 29,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "appreciate": {
+      "id": 30,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "approval": {
+      "id": 31,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "approve": {
+      "id": 32,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "approved": {
+      "id": 33,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "arrived": {
+      "id": 34,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ask": {
+      "id": 35,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "asked": {
+      "id": 36,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "assist": {
+      "id": 37,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "assistance": {
+      "id": 38,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "assistant": {
+      "id": 39,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "authentication": {
+      "id": 40,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "authenticator": {
+      "id": 41,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "available": {
+      "id": 42,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "back": {
+      "id": 43,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 5
+    },
+    "backup": {
+      "id": 44,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "bahut": {
+      "id": 45,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "balance": {
+      "id": 46,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "band": {
+      "id": 47,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "base": {
+      "id": 48,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "batao": {
+      "id": 49,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "beauty": {
+      "id": 50,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "bech": {
+      "id": 51,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "bechna": {
+      "id": 52,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "become": {
+      "id": 53,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "before": {
+      "id": 54,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "below": {
+      "id": 55,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "best": {
+      "id": 56,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "bhai": {
+      "id": 57,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "billed": {
+      "id": 58,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "bot": {
+      "id": 59,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "bought": {
+      "id": 60,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "brand": {
+      "id": 61,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "bring": {
+      "id": 62,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "broken": {
+      "id": 63,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "brought": {
+      "id": 64,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "browse": {
+      "id": 65,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "buy": {
+      "id": 66,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 23
+    },
+    "bye": {
+      "id": 67,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 13
+    },
+    "can": {
+      "id": 68,
+      "df": 15,
+      "idf": 1.485508,
+      "count": 41
+    },
+    "cannot": {
+      "id": 69,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "capability": {
+      "id": 70,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "care": {
+      "id": 71,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "catch": {
+      "id": 72,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "chalta": {
+      "id": 73,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "change": {
+      "id": 74,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 6
+    },
+    "charge": {
+      "id": 75,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "charged": {
+      "id": 76,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "chat": {
+      "id": 77,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "cheap": {
+      "id": 78,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "cheaper": {
+      "id": 79,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "check": {
+      "id": 80,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 5
+    },
+    "checkout": {
+      "id": 81,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "cheer": {
+      "id": 82,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "claim": {
+      "id": 83,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "close": {
+      "id": 84,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "closed": {
+      "id": 85,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "code": {
+      "id": 86,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "com": {
+      "id": 87,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "common": {
+      "id": 88,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 5
+    },
+    "complaint": {
+      "id": 89,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 5
+    },
+    "complete": {
+      "id": 90,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "concept": {
+      "id": 91,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "condition": {
+      "id": 92,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "contact": {
+      "id": 93,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "coupon": {
+      "id": 94,
+      "df": 10,
+      "idf": 1.860201,
+      "count": 127
+    },
+    "cut": {
+      "id": 95,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "cycle": {
+      "id": 96,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "dashboard": {
+      "id": 97,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "data": {
+      "id": 98,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 7
+    },
+    "date": {
+      "id": 99,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "date_today": {
+      "id": 100,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "deal": {
+      "id": 101,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 10
+    },
+    "declined": {
+      "id": 102,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "delete": {
+      "id": 103,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "detail": {
+      "id": 104,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 14
+    },
+    "dhanyavaad": {
+      "id": 105,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "dhoondo": {
+      "id": 106,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "dikhao": {
+      "id": 107,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "din": {
+      "id": 108,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "disable": {
+      "id": 109,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "disabled": {
+      "id": 110,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "discount": {
+      "id": 111,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "display": {
+      "id": 112,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "documentation": {
+      "id": 113,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "double": {
+      "id": 114,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "downtime": {
+      "id": 115,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "drop": {
+      "id": 116,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "each": {
+      "id": 117,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "earn": {
+      "id": 118,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 26
+    },
+    "earned": {
+      "id": 119,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "edit": {
+      "id": 120,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "eligibility": {
+      "id": 121,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "eligible": {
+      "id": 122,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "else": {
+      "id": 123,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "enable": {
+      "id": 124,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "end": {
+      "id": 125,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ends": {
+      "id": 126,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "error": {
+      "id": 127,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "evening": {
+      "id": 128,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "everything": {
+      "id": 129,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "exactly": {
+      "id": 130,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "exit": {
+      "id": 131,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "expire": {
+      "id": 132,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "expired": {
+      "id": 133,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "expiry": {
+      "id": 134,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "explain": {
+      "id": 135,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 7
+    },
+    "face": {
+      "id": 136,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "factor": {
+      "id": 137,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "fail": {
+      "id": 138,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "fall": {
+      "id": 139,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "faq": {
+      "id": 140,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "far": {
+      "id": 141,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "farewell": {
+      "id": 142,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "feature": {
+      "id": 143,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "find": {
+      "id": 144,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 8
+    },
+    "first": {
+      "id": 145,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "flipkart": {
+      "id": 146,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "follow": {
+      "id": 147,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "food": {
+      "id": 148,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "frequently": {
+      "id": 149,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "friend": {
+      "id": 150,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "gaya": {
+      "id": 151,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "general": {
+      "id": 152,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "gets": {
+      "id": 153,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "give": {
+      "id": 154,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "glad": {
+      "id": 155,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "go": {
+      "id": 156,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 7
+    },
+    "going": {
+      "id": 157,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "gone": {
+      "id": 158,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "good": {
+      "id": 159,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 6
+    },
+    "goodbye": {
+      "id": 160,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "gotta": {
+      "id": 161,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "grateful": {
+      "id": 162,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "great": {
+      "id": 163,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "greet": {
+      "id": 164,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "guide": {
+      "id": 165,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "hack": {
+      "id": 166,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "hai": {
+      "id": 167,
+      "df": 13,
+      "idf": 1.619039,
+      "count": 17
+    },
+    "hain": {
+      "id": 168,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "handle": {
+      "id": 169,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "handled": {
+      "id": 170,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "happen": {
+      "id": 171,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 3
+    },
+    "happened": {
+      "id": 172,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "hello": {
+      "id": 173,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 7
+    },
+    "help": {
+      "id": 174,
+      "df": 7,
+      "idf": 2.178655,
+      "count": 19
+    },
+    "helpdesk": {
+      "id": 175,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "helped": {
+      "id": 176,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "helpful": {
+      "id": 177,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "hey": {
+      "id": 178,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "hi": {
+      "id": 179,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "hii": {
+      "id": 180,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "history": {
+      "id": 181,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "ho": {
+      "id": 182,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 3
+    },
+    "home": {
+      "id": 183,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "how": {
+      "id": 184,
+      "df": 18,
+      "idf": 1.313658,
+      "count": 97
+    },
+    "hu": {
+      "id": 185,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 5
+    },
+    "hua": {
+      "id": 186,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "income": {
+      "id": 187,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "info": {
+      "id": 188,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "information": {
+      "id": 189,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 7
+    },
+    "introduce": {
+      "id": 190,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "invalid": {
+      "id": 191,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "issue": {
+      "id": 192,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "item": {
+      "id": 193,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ji": {
+      "id": 194,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "ka": {
+      "id": 195,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "kaam": {
+      "id": 196,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kab": {
+      "id": 197,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "kaha": {
+      "id": 198,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kaise": {
+      "id": 199,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 5
+    },
+    "kamaya": {
+      "id": 200,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "kar": {
+      "id": 201,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 6
+    },
+    "kare": {
+      "id": 202,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "karna": {
+      "id": 203,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "karni": {
+      "id": 204,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "karo": {
+      "id": 205,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "karta": {
+      "id": 206,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "karu": {
+      "id": 207,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ke": {
+      "id": 208,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "keep": {
+      "id": 209,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kharidari": {
+      "id": 210,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kharidna": {
+      "id": 211,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "ki": {
+      "id": 212,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kind": {
+      "id": 213,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kitna": {
+      "id": 214,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "kitne": {
+      "id": 215,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kitni": {
+      "id": 216,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "knowledge": {
+      "id": 217,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "kya": {
+      "id": 218,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 6
+    },
+    "kyu": {
+      "id": 219,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ladder": {
+      "id": 220,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "last": {
+      "id": 221,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "late": {
+      "id": 222,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "later": {
+      "id": 223,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "lena": {
+      "id": 224,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "let": {
+      "id": 225,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "like": {
+      "id": 226,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "link": {
+      "id": 227,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "list": {
+      "id": 228,
+      "df": 8,
+      "idf": 2.060872,
+      "count": 22
+    },
+    "listed": {
+      "id": 229,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "load": {
+      "id": 230,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "locked": {
+      "id": 231,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "log": {
+      "id": 232,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 6
+    },
+    "logg": {
+      "id": 233,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "logged": {
+      "id": 234,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "login": {
+      "id": 235,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "long": {
+      "id": 236,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "look": {
+      "id": 237,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "lot": {
+      "id": 238,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "madad": {
+      "id": 239,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "made": {
+      "id": 240,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "maintenance": {
+      "id": 241,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "make": {
+      "id": 242,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 7
+    },
+    "manage": {
+      "id": 243,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "many": {
+      "id": 244,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "marketplace": {
+      "id": 245,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 5
+    },
+    "meet": {
+      "id": 246,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "mera": {
+      "id": 247,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 5
+    },
+    "meri": {
+      "id": 248,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 6
+    },
+    "milega": {
+      "id": 249,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "minimum": {
+      "id": 250,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "mode": {
+      "id": 251,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "money": {
+      "id": 252,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 15
+    },
+    "money100": {
+      "id": 253,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "money200": {
+      "id": 254,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "monitor": {
+      "id": 255,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "more": {
+      "id": 256,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 6
+    },
+    "morning": {
+      "id": 257,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "much": {
+      "id": 258,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 19
+    },
+    "mujhe": {
+      "id": 259,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "myntra": {
+      "id": 260,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "namaste": {
+      "id": 261,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "name": {
+      "id": 262,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 5
+    },
+    "navigate": {
+      "id": 263,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "need": {
+      "id": 264,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 11
+    },
+    "needed": {
+      "id": 265,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "nice": {
+      "id": 266,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "night": {
+      "id": 267,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "nike": {
+      "id": 268,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "no": {
+      "id": 269,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "not": {
+      "id": 270,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 13
+    },
+    "nothing": {
+      "id": 271,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "notification": {
+      "id": 272,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "notify": {
+      "id": 273,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "number": {
+      "id": 274,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "nykaa": {
+      "id": 275,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "off": {
+      "id": 276,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 5
+    },
+    "offer": {
+      "id": 277,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 3
+    },
+    "often": {
+      "id": 278,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "online": {
+      "id": 279,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "open": {
+      "id": 280,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 6
+    },
+    "operate": {
+      "id": 281,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "option": {
+      "id": 282,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "order": {
+      "id": 283,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 10
+    },
+    "outage": {
+      "id": 284,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "overview": {
+      "id": 285,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "page": {
+      "id": 286,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 9
+    },
+    "paid": {
+      "id": 287,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "paisa": {
+      "id": 288,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "past": {
+      "id": 289,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "pay": {
+      "id": 290,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 4
+    },
+    "payment": {
+      "id": 291,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 7
+    },
+    "payout": {
+      "id": 292,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 34
+    },
+    "pend": {
+      "id": 293,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "per": {
+      "id": 294,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "permitted": {
+      "id": 295,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "personal": {
+      "id": 296,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "photo": {
+      "id": 297,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "picture": {
+      "id": 298,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "place": {
+      "id": 299,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "platform": {
+      "id": 300,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "pleased": {
+      "id": 301,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "policy": {
+      "id": 302,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "previous": {
+      "id": 303,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "price": {
+      "id": 304,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 20
+    },
+    "privacy": {
+      "id": 305,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "private": {
+      "id": 306,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "problem": {
+      "id": 307,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "process": {
+      "id": 308,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 5
+    },
+    "processed": {
+      "id": 309,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "product": {
+      "id": 310,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "profile": {
+      "id": 311,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 9
+    },
+    "protect": {
+      "id": 312,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "protected": {
+      "id": 313,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "protection": {
+      "id": 314,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "provide": {
+      "id": 315,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 4
+    },
+    "pull": {
+      "id": 316,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "purchase": {
+      "id": 317,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 14
+    },
+    "purchased": {
+      "id": 318,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "purpose": {
+      "id": 319,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "put": {
+      "id": 320,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "qualify": {
+      "id": 321,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "question": {
+      "id": 322,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 8
+    },
+    "quit": {
+      "id": 323,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "raise": {
+      "id": 324,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "raised": {
+      "id": 325,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "rate": {
+      "id": 326,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "reach": {
+      "id": 327,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "read": {
+      "id": 328,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "receive": {
+      "id": 329,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "recent": {
+      "id": 330,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "refund": {
+      "id": 331,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 25
+    },
+    "reject": {
+      "id": 332,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "rejected": {
+      "id": 333,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 4
+    },
+    "removed": {
+      "id": 334,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "reply": {
+      "id": 335,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "report": {
+      "id": 336,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "request": {
+      "id": 337,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "requirement": {
+      "id": 338,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "respond": {
+      "id": 339,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "return": {
+      "id": 340,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "returned": {
+      "id": 341,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "review": {
+      "id": 342,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "reviewed": {
+      "id": 343,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "right": {
+      "id": 344,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 3
+    },
+    "rule": {
+      "id": 345,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "run": {
+      "id": 346,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "rundown": {
+      "id": 347,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "safe": {
+      "id": 348,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "sahayata": {
+      "id": 349,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "sakta": {
+      "id": 350,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 4
+    },
+    "sakte": {
+      "id": 351,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "sale": {
+      "id": 352,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 10
+    },
+    "savehatke": {
+      "id": 353,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 10
+    },
+    "schedule": {
+      "id": 354,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "screen": {
+      "id": 355,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "search": {
+      "id": 356,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "second": {
+      "id": 357,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "section": {
+      "id": 358,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 3
+    },
+    "secure": {
+      "id": 359,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "security": {
+      "id": 360,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "see": {
+      "id": 361,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 7
+    },
+    "sell": {
+      "id": 362,
+      "df": 5,
+      "idf": 2.466337,
+      "count": 38
+    },
+    "seller": {
+      "id": 363,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 5
+    },
+    "send": {
+      "id": 364,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "sent": {
+      "id": 365,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "server": {
+      "id": 366,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "service": {
+      "id": 367,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "set": {
+      "id": 368,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 6
+    },
+    "sett": {
+      "id": 369,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 5
+    },
+    "setup": {
+      "id": 370,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "share": {
+      "id": 371,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "shopp": {
+      "id": 372,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "show": {
+      "id": 373,
+      "df": 9,
+      "idf": 1.955511,
+      "count": 26
+    },
+    "shukriya": {
+      "id": 374,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "sign": {
+      "id": 375,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 6
+    },
+    "site": {
+      "id": 376,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 8
+    },
+    "skill": {
+      "id": 377,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "slab": {
+      "id": 378,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "sold": {
+      "id": 379,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "someone": {
+      "id": 380,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "something": {
+      "id": 381,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 5
+    },
+    "soon": {
+      "id": 382,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "soonest": {
+      "id": 383,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "sort": {
+      "id": 384,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "specific": {
+      "id": 385,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "start": {
+      "id": 386,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 3
+    },
+    "started": {
+      "id": 387,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "status": {
+      "id": 388,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 11
+    },
+    "step": {
+      "id": 389,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 7
+    },
+    "still": {
+      "id": 390,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 4
+    },
+    "stop": {
+      "id": 391,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "stored": {
+      "id": 392,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "structure": {
+      "id": 393,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "submission": {
+      "id": 394,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 8
+    },
+    "submit": {
+      "id": 395,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "submitted": {
+      "id": 396,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "successful": {
+      "id": 397,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "summary": {
+      "id": 398,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "support": {
+      "id": 399,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 10
+    },
+    "switch": {
+      "id": 400,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "system": {
+      "id": 401,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "take": {
+      "id": 402,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 3
+    },
+    "talk": {
+      "id": 403,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "tell": {
+      "id": 404,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 8
+    },
+    "term": {
+      "id": 405,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "thank": {
+      "id": 406,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 22
+    },
+    "thankyou": {
+      "id": 407,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "that": {
+      "id": 408,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 12
+    },
+    "theek": {
+      "id": 409,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "thing": {
+      "id": 410,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "threshold": {
+      "id": 411,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "through": {
+      "id": 412,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 4
+    },
+    "thx": {
+      "id": 413,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ticket": {
+      "id": 414,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 9
+    },
+    "tier": {
+      "id": 415,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 5
+    },
+    "time": {
+      "id": 416,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "told": {
+      "id": 417,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "ton": {
+      "id": 418,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "topic": {
+      "id": 419,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 2
+    },
+    "total": {
+      "id": 420,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "track": {
+      "id": 421,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 7
+    },
+    "tracker": {
+      "id": 422,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "transaction": {
+      "id": 423,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "travel": {
+      "id": 424,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "trend": {
+      "id": 425,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "turn": {
+      "id": 426,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "twice": {
+      "id": 427,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "ty": {
+      "id": 428,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "unavailable": {
+      "id": 429,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "under": {
+      "id": 430,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 13
+    },
+    "unused": {
+      "id": 431,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "update": {
+      "id": 432,
+      "df": 4,
+      "idf": 2.648659,
+      "count": 7
+    },
+    "upload": {
+      "id": 433,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "use": {
+      "id": 434,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "useful": {
+      "id": 435,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "username": {
+      "id": 436,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "valid": {
+      "id": 437,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "value": {
+      "id": 438,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 4
+    },
+    "verification": {
+      "id": 439,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 3
+    },
+    "want": {
+      "id": 440,
+      "df": 9,
+      "idf": 1.955511,
+      "count": 22
+    },
+    "wapa": {
+      "id": 441,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "watch": {
+      "id": 442,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "website": {
+      "id": 443,
+      "df": 2,
+      "idf": 3.159484,
+      "count": 10
+    },
+    "what": {
+      "id": 444,
+      "df": 14,
+      "idf": 1.550046,
+      "count": 68
+    },
+    "when": {
+      "id": 445,
+      "df": 6,
+      "idf": 2.312186,
+      "count": 14
+    },
+    "where": {
+      "id": 446,
+      "df": 6,
+      "idf": 2.312186,
+      "count": 17
+    },
+    "which": {
+      "id": 447,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 6
+    },
+    "who": {
+      "id": 448,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "whole": {
+      "id": 449,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "why": {
+      "id": 450,
+      "df": 3,
+      "idf": 2.871802,
+      "count": 8
+    },
+    "without": {
+      "id": 451,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "work": {
+      "id": 452,
+      "df": 8,
+      "idf": 2.060872,
+      "count": 17
+    },
+    "worried": {
+      "id": 453,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "worth": {
+      "id": 454,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "yet": {
+      "id": 455,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    },
+    "yo": {
+      "id": 456,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 1
+    },
+    "zomato": {
+      "id": 457,
+      "df": 1,
+      "idf": 3.564949,
+      "count": 2
+    }
+  }
+}

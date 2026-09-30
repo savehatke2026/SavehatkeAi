@@ -1,0 +1,30 @@
+{
+  "name": "savehatke-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SaveHatke AI — Google Sign-In gated AI chatbot with a Google Sheet whitelist.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "test": "node tests/ai.test.mjs && node tests/ai-live.test.mjs && node tests/backend.test.mjs && node verify.mjs",
+    "test:ai": "node tests/ai.test.mjs",
+    "test:ai-live": "node tests/ai-live.test.mjs",
+    "test:backend": "node tests/backend.test.mjs",
+    "test:e2e": "node verify.mjs",
+    "shots": "node tests/shots.mjs",
+    "ai:prepare": "node scripts/ai/prepareData.js",
+    "ai:vocab": "node scripts/ai/buildVocabulary.js",
+    "ai:train": "node scripts/ai/train.js",
+    "ai:eval": "node scripts/ai/evaluate.js",
+    "ai:test": "node scripts/ai/test.js",
+    "ai:build": "node scripts/ai/prepareData.js && node scripts/ai/buildVocabulary.js && node scripts/ai/train.js",
+    "ai": "npm run ai:build && npm run ai:eval && npm run ai:test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "puppeteer-core": "^25.11.0"
+  }
+}

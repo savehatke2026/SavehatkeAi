@@ -1,0 +1,456 @@
+{
+  "version": "1.0.0",
+  "note": "Retrieval source for SaveHatke AI. `verified: true` entries describe behaviour that is implemented in this repository and can be checked in code. `verified: false` entries are OWNER-CONFIRMED POLICY PLACEHOLDERS — they state the intended business rule and must be confirmed or corrected by the SaveHatke team before launch. Answers must never be invented at request time; anything needing live data goes through toolRouter instead.",
+  "entries": [
+    {
+      "id": "overview-001",
+      "category": "Overview",
+      "question": "What is SaveHatke AI?",
+      "answer": "SaveHatke AI is the assistant built into the SaveHatke site. It answers questions about your account, coupons, earnings, payouts and support, and it can look up your own live data when you are signed in.",
+      "keywords": ["what", "savehatke", "ai", "about", "assistant", "who"],
+      "intents": ["HOW_IT_WORKS", "GENERAL_HELP"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "overview-002",
+      "category": "Overview",
+      "question": "How does SaveHatke work?",
+      "answer": "SaveHatke is a coupon marketplace: people buy coupons they can use, and people who have spare coupons can list them for sale. Sign in with Google to get access, browse the marketplace, and manage everything from your dashboard.",
+      "keywords": ["how", "works", "marketplace", "buy", "sell", "overview"],
+      "intents": ["HOW_IT_WORKS"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "overview-003",
+      "category": "Overview",
+      "question": "How do I get started?",
+      "answer": "Sign in with your Google account. If your account has been approved, you land straight in the dashboard, where you can browse coupons, sell one, and track your earnings.",
+      "keywords": ["get", "started", "begin", "first", "signup", "sign up"],
+      "intents": ["HOW_IT_WORKS", "ACCOUNT"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "account-001",
+      "category": "Account",
+      "question": "How do I sign in?",
+      "answer": "Sign-in is Google-only. Use the Sign in with Google button on the login page — there is no password to create or remember.",
+      "keywords": ["sign", "in", "login", "google", "password", "account"],
+      "intents": ["ACCOUNT"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "account-002",
+      "category": "Account",
+      "question": "Why is my account disabled or not authorized?",
+      "answer": "Access is controlled by an approved-accounts list. If your Google account is not on it, or its status is not active, you will see the access-restricted page. Ask an administrator to add your Google email with an active status.",
+      "keywords": ["disabled", "not", "authorized", "access", "restricted", "blocked", "denied"],
+      "intents": ["ACCOUNT"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "account-003",
+      "category": "Account",
+      "question": "How long does a change to my access take?",
+      "answer": "Access is re-checked on every request against a short-lived cache, so a status change takes effect within about a minute — you do not have to wait for your session to expire.",
+      "keywords": ["access", "change", "revoke", "how", "long", "immediate", "delay"],
+      "intents": ["ACCOUNT", "SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "account-004",
+      "category": "Account",
+      "question": "How long do I stay signed in?",
+      "answer": "A session lasts seven days by default. Your access is still verified on every request, so signing out or being removed from the approved list takes effect immediately.",
+      "keywords": ["session", "signed", "in", "expire", "how", "long", "logout"],
+      "intents": ["ACCOUNT", "SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "account-005",
+      "category": "Account",
+      "question": "How do I sign out?",
+      "answer": "Use Sign out in the navigation menu. It clears the session cookie on the server, so the browser is no longer signed in.",
+      "keywords": ["sign", "out", "logout", "leave", "exit"],
+      "intents": ["ACCOUNT"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "account-006",
+      "category": "Account",
+      "question": "How do I get an API key?",
+      "answer": "Open your dashboard and use the API Keys section to create a key. Give it a label you will recognise so you can revoke the right one later.",
+      "keywords": ["api", "key", "keys", "token", "create", "dashboard"],
+      "intents": ["ACCOUNT", "PROFILE"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "security-001",
+      "category": "Security",
+      "question": "How do you protect my data?",
+      "answer": "Sign-in happens on the server, and your session is held in an HttpOnly cookie that page scripts cannot read. Your access is verified on every request, and SaveHatke AI never has direct database access — it can only ask the application for your own data.",
+      "keywords": ["protect", "data", "security", "privacy", "stored", "safe", "cookie"],
+      "intents": ["SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "security-002",
+      "category": "Security",
+      "question": "Can the assistant show me secrets or other people's data?",
+      "answer": "No. SaveHatke AI cannot reveal API keys, configuration, session tokens, one-time codes, coupon codes before purchase, or any other account's data. Those requests are refused even if they are phrased as instructions to ignore its rules.",
+      "keywords": ["secret", "other", "users", "data", "reveal", "show", "privacy", "leak"],
+      "intents": ["SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "security-003",
+      "category": "Security",
+      "question": "I think someone accessed my account. What should I do?",
+      "answer": "Sign out everywhere by signing out of the site, then tell the SaveHatke team immediately so the session can be invalidated and your access reviewed. Do not share any codes or links you received.",
+      "keywords": ["someone", "accessed", "hacked", "compromised", "suspicious", "logged", "stolen"],
+      "intents": ["SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "security-004",
+      "category": "Security",
+      "question": "How do I enable two-factor authentication?",
+      "answer": "Two-factor authentication is managed from your account security settings. Once enabled you will be asked for a code from your authenticator app at sign-in. If a code is rejected, check that your device clock is set automatically, then try the next code.",
+      "keywords": ["2fa", "two", "factor", "authentication", "enable", "authenticator", "verification", "setup"],
+      "intents": ["TWO_FACTOR_AUTH", "SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "security-005",
+      "category": "Security",
+      "question": "I lost access to my backup codes.",
+      "answer": "Backup codes can only be viewed or regenerated from your account security settings while you are signed in — they can never be displayed in chat. If you are locked out, contact support so your identity can be verified properly.",
+      "keywords": ["backup", "codes", "lost", "regenerate", "recovery", "locked", "out"],
+      "intents": ["TWO_FACTOR_AUTH", "SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "buying-001",
+      "category": "Buying",
+      "question": "How do I buy a coupon?",
+      "answer": "Find a listing in the marketplace, open it, and complete the purchase from the listing page. Once the purchase is confirmed, the coupon details are released to you — the code stays hidden until then, on purpose.",
+      "keywords": ["buy", "purchase", "order", "coupon", "how", "steps", "payment"],
+      "intents": ["BUY_COUPON"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "buying-002",
+      "category": "Buying",
+      "question": "Why can't I see the coupon code?",
+      "answer": "Coupon codes are withheld until a purchase is authorised. That protects the seller, because a visible code could be redeemed by anyone. The code is shown to you as soon as your purchase is complete.",
+      "keywords": ["why", "cannot", "see", "code", "hidden", "coupon", "before", "buy"],
+      "intents": ["COUPON_DETAILS", "BUY_COUPON"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "buying-003",
+      "category": "Buying",
+      "question": "How do I find coupons?",
+      "answer": "Browse the marketplace, or narrow it down by brand, category or price. Ask me things like \u201cshow me Nike coupons\u201d or \u201ccoupons under 200\u201d and I will look up what is actually listed right now.",
+      "keywords": ["find", "search", "browse", "coupons", "brand", "category", "price"],
+      "intents": ["SEARCH_COUPON"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "buying-004",
+      "category": "Buying",
+      "question": "Where can I see my purchases?",
+      "answer": "Your purchase history is in your dashboard. Ask me \u201cshow my purchases\u201d and I will fetch it from your account.",
+      "keywords": ["purchases", "history", "orders", "dashboard", "bought"],
+      "intents": ["PURCHASE_HISTORY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "selling-001",
+      "category": "Selling",
+      "question": "Can I sell coupons?",
+      "answer": "Yes, but you need at least one completed purchase before you are eligible to sell a coupon.",
+      "keywords": ["sell", "selling", "coupon", "eligible", "can", "requirements"],
+      "intents": ["SELL_ELIGIBILITY"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "selling-002",
+      "category": "Selling",
+      "question": "How do I sell a coupon?",
+      "answer": "Once you are eligible, open the sell page, enter the coupon's brand, value and expiry, and submit it. Our team reviews the listing before it goes live in the marketplace.",
+      "keywords": ["sell", "how", "list", "submit", "upload", "process", "steps"],
+      "intents": ["SELL_COUPON"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "selling-003",
+      "category": "Selling",
+      "question": "How long does approval take?",
+      "answer": "Submitted coupons are reviewed before they appear in the marketplace. I can tell you the current status of your own submissions, but I cannot approve or reject anything myself.",
+      "keywords": ["approval", "review", "how", "long", "pending", "submission", "status"],
+      "intents": ["SUBMISSION_STATUS"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "selling-004",
+      "category": "Selling",
+      "question": "Why was my coupon rejected?",
+      "answer": "Listings are usually rejected when the code is already used, expired, unreadable, or does not match the stated brand or value. I can show you the status of your submission, but the decision itself is made by the review team.",
+      "keywords": ["rejected", "why", "declined", "refused", "coupon", "submission"],
+      "intents": ["SUBMISSION_STATUS"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "earnings-001",
+      "category": "Earnings",
+      "question": "How much do I earn per coupon?",
+      "answer": "Sellers earn a flat rate of \u20b910 for each sold eligible coupon. What you earn depends on how many of your coupons sell, not on the coupon's face value.",
+      "keywords": ["earn", "earnings", "rate", "per", "coupon", "how", "much", "10"],
+      "intents": ["EARNINGS"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "earnings-002",
+      "category": "Earnings",
+      "question": "How is my total earning calculated?",
+      "answer": "Your total is the flat rate multiplied by the number of your coupons that have actually sold: \u20b910 \u00d7 sold coupons. Coupons that are still pending or were rejected do not count.",
+      "keywords": ["total", "calculation", "calculated", "how", "earnings", "sold", "formula"],
+      "intents": ["EARNINGS"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "earnings-003",
+      "category": "Earnings",
+      "question": "Where can I see my earnings?",
+      "answer": "Your earnings are shown in your dashboard. Ask me \u201chow much have I earned\u201d and I will fetch the current figure from your account.",
+      "keywords": ["where", "see", "earnings", "dashboard", "summary"],
+      "intents": ["EARNINGS"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "payout-001",
+      "category": "Payouts",
+      "question": "When will I get my payout?",
+      "answer": "Payouts run on a schedule once your balance reaches the minimum. Ask me \u201cwhere is my payout\u201d and I will check your own payout status.",
+      "keywords": ["when", "payout", "get", "paid", "schedule", "status"],
+      "intents": ["PAYOUT_STATUS"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "payout-002",
+      "category": "Payouts",
+      "question": "What is the payout ladder?",
+      "answer": "The payout ladder sets when a balance becomes payable and how it is transferred. Ask me about the payout ladder and I will read you the current published thresholds.",
+      "keywords": ["payout", "ladder", "tiers", "threshold", "minimum", "rules", "policy"],
+      "intents": ["PAYOUT_LADDER"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "payout-003",
+      "category": "Payouts",
+      "question": "Why is my payout late?",
+      "answer": "Payouts are usually delayed by an unverified payment detail or a balance that has not yet reached the minimum. I can show your payout status, and support can look into a specific transfer.",
+      "keywords": ["payout", "late", "delayed", "not", "received", "pending", "why"],
+      "intents": ["PAYOUT_STATUS"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "support-001",
+      "category": "Support",
+      "question": "How do I contact support?",
+      "answer": "Raise a ticket from the support page, or use the contact page. Ask me \u201ccheck my support tickets\u201d and I will show you your own open tickets and any replies.",
+      "keywords": ["contact", "support", "ticket", "help", "raise", "complaint"],
+      "intents": ["SUPPORT_TICKETS"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "support-002",
+      "category": "Support",
+      "question": "Did support reply to me?",
+      "answer": "I can check your own tickets and tell you whether there is a reply. Ask me \u201cdid support reply\u201d and I will look it up.",
+      "keywords": ["did", "support", "reply", "replied", "answer", "ticket", "response"],
+      "intents": ["SUPPORT_TICKETS"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "refund-001",
+      "category": "Refunds",
+      "question": "How do refunds work?",
+      "answer": "If a coupon you bought turns out to be invalid or already used, raise a support ticket with the listing details. Refunds are reviewed case by case, and I cannot issue or approve one myself.",
+      "keywords": ["refund", "refunds", "money", "back", "invalid", "dispute", "charged"],
+      "intents": ["REFUND"],
+      "verified": false,
+      "enabled": true
+    },
+    {
+      "id": "navigation-001",
+      "category": "Navigation",
+      "question": "Where is the dashboard?",
+      "answer": "The dashboard is linked in the top navigation once you are signed in. It holds your purchases, earnings, payout status and API keys.",
+      "keywords": ["where", "dashboard", "page", "find", "navigation"],
+      "intents": ["WEBSITE_NAVIGATION"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "navigation-002",
+      "category": "Navigation",
+      "question": "Where is the marketplace?",
+      "answer": "The marketplace is reachable from the main navigation. It is where you browse, search and buy coupons.",
+      "keywords": ["where", "marketplace", "browse", "coupons", "page", "link"],
+      "intents": ["WEBSITE_NAVIGATION"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "navigation-003",
+      "category": "Navigation",
+      "question": "Where is my profile?",
+      "answer": "Your profile is linked from the avatar in the top navigation. It shows your account details and the name shown across the site.",
+      "keywords": ["where", "profile", "avatar", "account", "page", "settings"],
+      "intents": ["WEBSITE_NAVIGATION", "PROFILE"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "navigation-004",
+      "category": "Navigation",
+      "question": "Where is the sell page?",
+      "answer": "The sell page is linked from the main navigation. It is where you submit a coupon for review so it can be listed.",
+      "keywords": ["where", "sell", "page", "list", "submit", "navigation"],
+      "intents": ["WEBSITE_NAVIGATION"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "navigation-005",
+      "category": "Navigation",
+      "question": "Where can I find the legal pages?",
+      "answer": "The privacy policy and terms of service are linked in the footer of every page. The contact page is there too.",
+      "keywords": ["privacy", "terms", "legal", "policy", "footer", "contact"],
+      "intents": ["WEBSITE_NAVIGATION"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "pricetracker-001",
+      "category": "Price tracker",
+      "question": "How does the price tracker work?",
+      "answer": "The price tracker watches a product for you and flags it when the price drops. Track a product from its listing, and you will see the price history and any alerts from your dashboard.",
+      "keywords": ["price", "tracker", "track", "tracking", "drop", "alert", "history"],
+      "intents": ["PRICE_TRACKER"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "pricetracker-002",
+      "category": "Price tracker",
+      "question": "How do I set a price alert?",
+      "answer": "Open the product you want to watch and set your target price there. You will be notified when the price reaches it.",
+      "keywords": ["set", "price", "alert", "target", "notify", "watch"],
+      "intents": ["PRICE_TRACKER"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "maintenance-001",
+      "category": "Maintenance",
+      "question": "Is the site down?",
+      "answer": "Let me check whether maintenance is currently active. If pages will not load for you but maintenance is not on, it is usually a local network or browser issue worth retrying.",
+      "keywords": ["site", "down", "maintenance", "outage", "not", "loading", "offline"],
+      "intents": ["MAINTENANCE"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "faq-001",
+      "category": "FAQ",
+      "question": "What can SaveHatke AI help with?",
+      "answer": "I can help with buying and selling coupons, your eligibility and earnings, payout status, your purchases, support tickets, account and security questions, price tracking, and finding your way around the site.",
+      "keywords": ["what", "can", "help", "faq", "questions", "topics", "support"],
+      "intents": ["FAQ", "GENERAL_HELP"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "faq-002",
+      "category": "FAQ",
+      "question": "Can SaveHatke AI make changes to my account?",
+      "answer": "No. I can look up your own data and explain things, but I cannot approve coupons, move money, change settings, submit forms or perform any action on your behalf.",
+      "keywords": ["can", "ai", "change", "account", "action", "approve", "modify", "do"],
+      "intents": ["FAQ", "SECURITY"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "faq-003",
+      "category": "FAQ",
+      "question": "Can I trust the numbers the assistant gives me?",
+      "answer": "Yes, because they are not generated by the assistant. Figures such as earnings, payouts and purchases are fetched live from the SaveHatke backend, and the backend is always the authority.",
+      "keywords": ["trust", "numbers", "accurate", "correct", "data", "live", "real"],
+      "intents": ["FAQ"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "help-001",
+      "category": "Help",
+      "question": "What can you do?",
+      "answer": "I can search live coupon listings, check your eligibility, earnings, payout status, purchases and support tickets, answer account and security questions, and point you to the right page. Just ask in plain English or Hinglish.",
+      "keywords": ["what", "can", "you", "do", "help", "features", "capabilities"],
+      "intents": ["GENERAL_HELP"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "coupons-001",
+      "category": "Coupons",
+      "question": "Which brands do you have coupons for?",
+      "answer": "Let me look up which brands are listed right now. Availability changes as sellers list and buyers redeem, so I always check live rather than quoting a fixed list.",
+      "keywords": ["which", "brands", "coupons", "available", "list", "have"],
+      "intents": ["SEARCH_COUPON"],
+      "verified": true,
+      "enabled": true
+    },
+    {
+      "id": "coupons-002",
+      "category": "Coupons",
+      "question": "How do I know a coupon is still valid?",
+      "answer": "Each listing shows its expiry and review status. I can tell you the expiry on a specific listing, but the definitive check happens when you use the code.",
+      "keywords": ["valid", "still", "expiry", "expire", "know", "coupon", "listing"],
+      "intents": ["COUPON_DETAILS"],
+      "verified": true,
+      "enabled": true
+    }
+  ]
+}

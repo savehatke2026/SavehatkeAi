@@ -1,0 +1,175 @@
+{
+  "version": "1.0.0",
+  "note": "Deterministic response templates for SaveHatke AI. The response engine fills {placeholders} from tool results and knowledge hits only — it never invents facts. `variants` are picked with a stable hash of the conversation id so a reply is reproducible for the same turn.",
+  "templates": {
+    "GREETING": {
+      "variants": [
+        "Hello{name_part}. What can I help you with — coupons, selling, earnings, or your account?",
+        "Hi{name_part}. Ask me about coupons, your earnings, payouts or your account.",
+        "Hey{name_part}. What do you need help with?"
+      ]
+    },
+    "GOODBYE": {
+      "variants": [
+        "Bye{name_part}. Come back any time.",
+        "See you{name_part}. Happy to help again whenever you need.",
+        "Take care{name_part}."
+      ]
+    },
+    "THANKS": {
+      "variants": [
+        "You're welcome{name_part}. Anything else?",
+        "Happy to help{name_part}.",
+        "No problem{name_part}. Ask me anything else you need."
+      ]
+    },
+    "GENERAL_HELP": {
+      "variants": [
+        "I can help with coupon search, buying, selling and eligibility, your earnings and payout status, your purchases, support tickets, account and security questions, price tracking, and finding your way around the site.\n\nTry asking \u201cshow me Nike coupons\u201d, \u201chow much have I earned\u201d or \u201cwhere is my payout\u201d."
+      ]
+    },
+    "BUY_COUPON": {
+      "variants": [
+        "Find the listing you want in the marketplace, open it, and complete the purchase from the listing page. The coupon details are released to you once the purchase is confirmed — the code stays hidden until then.",
+        "Browse the marketplace, open the listing, and buy it from there. You will see the coupon details as soon as the purchase goes through."
+      ]
+    },
+    "SEARCH_COUPON": {
+      "empty": "I couldn't find any live listings matching that. Availability changes often, so try a different brand, category or price range.",
+      "header_one": "Here is the listing I found:",
+      "header_many": "Here are {count} live listings:",
+      "line": "\u2022 {brand} \u2014 {value} (expires {expiry})",
+      "footer": "Open the marketplace to buy any of these. I can tell you more about a specific one if you ask.",
+      "overflow": "Showing the first {shown} of {count}."
+    },
+    "COUPON_DETAILS": {
+      "no_context": "I don't have a coupon selected yet. Which listing do you mean? Try \u201cshow me Nike coupons\u201d first and then ask about one of them.",
+      "detail": "{brand} \u2014 value {value}, expires {expiry}, status {status}.",
+      "footer": "The code itself is released only after a purchase is authorised."
+    },
+    "SELL_COUPON": {
+      "variants": [
+        "Open the sell page, enter the coupon's brand, value and expiry, and submit it. Our team reviews the listing before it goes live in the marketplace.",
+        "Head to the sell page and submit the coupon's brand, value and expiry. Listings are reviewed before they appear in the marketplace."
+      ]
+    },
+    "SELL_ELIGIBILITY": {
+      "eligible": "Yes \u2014 you're eligible to sell. You have {completedPurchases} completed purchase(s), which meets the requirement.",
+      "not_eligible": "Not yet. You need at least one completed purchase before you can sell a coupon. You currently have {completedPurchases}.",
+      "unknown": "I couldn't confirm your eligibility right now. Please try again shortly."
+    },
+    "SUBMISSION_STATUS": {
+      "empty": "You don't have any coupon submissions yet. Once you submit one from the sell page it will show up here.",
+      "header_one": "Here is your submission:",
+      "header_many": "Here are your {count} submissions:",
+      "line": "\u2022 {brand} \u2014 {status} (submitted {submitted})",
+      "footer": "Only the review team can approve or reject a submission."
+    },
+    "EARNINGS": {
+      "summary": "You've had {soldCoupons} coupon(s) sold at \u20b9{ratePerCoupon} each, so your total earned is \u20b9{totalEarned}.",
+      "zero": "None of your coupons have sold yet, so your earnings are \u20b9{totalEarned}. The rate is \u20b9{ratePerCoupon} per sold coupon.",
+      "rate_only": "Sellers earn a flat \u20b9{ratePerCoupon} for each sold eligible coupon. Your total is \u20b9{ratePerCoupon} \u00d7 the number of coupons that actually sold.",
+      "footer": "Pending and rejected coupons don't count."
+    },
+    "PAYOUT_STATUS": {
+      "summary": "Your latest payout is {status}{amount_part}{date_part}.",
+      "none": "You don't have a payout on record yet. Payouts are created once your earnings reach the minimum threshold.",
+      "footer": "If this looks wrong, raise a support ticket and the team can check the transfer."
+    },
+    "PAYOUT_LADDER": {
+      "header": "Here is the current payout ladder:",
+      "line": "\u2022 From \u20b9{from} \u2014 {description}",
+      "footer": "Payouts are processed by the SaveHatke team on this schedule."
+    },
+    "PURCHASE_HISTORY": {
+      "empty": "You don't have any purchases yet. Once you buy a coupon it will appear here.",
+      "header_one": "Here is your purchase:",
+      "header_many": "Here are your {count} purchases:",
+      "line": "\u2022 {brand} \u2014 \u20b9{price} on {date} ({status})",
+      "footer": "Ask me about any of these for more detail."
+    },
+    "SUPPORT_TICKETS": {
+      "empty": "You don't have any support tickets open right now.",
+      "header_one": "Here is your ticket:",
+      "header_many": "Here are your {count} tickets:",
+      "line": "\u2022 {subject} \u2014 {status}{reply_part} (opened {opened})",
+      "footer": "You can add to a ticket from the support page."
+    },
+    "PRICE_TRACKER": {
+      "variants": [
+        "The price tracker watches a product for you and alerts you when the price drops. Open the product you want to follow and set your target price there; the price history shows up in your dashboard."
+      ]
+    },
+    "ACCOUNT": {
+      "variants": [
+        "Your account is tied to your Google sign-in. Open your profile from the avatar in the top navigation to see your details, and sign out from the navigation menu when you're done."
+      ]
+    },
+    "PROFILE": {
+      "summary": "You're signed in as {email}{name_part}. Your profile is reachable from the avatar in the top navigation."
+    },
+    "SECURITY": {
+      "variants": [
+        "Sign-in happens on the server and your session lives in an HttpOnly cookie that page scripts cannot read. Your access is verified on every request, and I never get direct database access — I can only ask the application for your own data."
+      ]
+    },
+    "TWO_FACTOR_AUTH": {
+      "variants": [
+        "Two-factor authentication is managed from your account security settings. Once it's on you'll be asked for a code from your authenticator app at sign-in. If a code is rejected, make sure your device clock is set automatically and try the next one."
+      ]
+    },
+    "MAINTENANCE": {
+      "active": "SaveHatke is currently in maintenance mode, so some pages may be unavailable. Normal service resumes as soon as the maintenance window ends.",
+      "inactive": "Maintenance is not active right now, so the site should be available. If a page still won't load for you, try a refresh or a different network."
+    },
+    "REFUND": {
+      "variants": [
+        "If a coupon you bought turns out to be invalid or already used, raise a support ticket with the listing details. Refunds are reviewed case by case, and I can't issue or approve one myself."
+      ]
+    },
+    "HOW_IT_WORKS": {
+      "variants": [
+        "SaveHatke is a coupon marketplace. You sign in with Google, browse or search live listings, and buy the coupons you want. If you have spare coupons you can list them for sale once you're eligible, and you earn a flat rate for each one that sells."
+      ]
+    },
+    "FAQ": {
+      "variants": [
+        "Common questions I can answer: how buying works, how to become eligible to sell, how earnings and payouts are calculated, how to find your purchases and support tickets, and how your account and data are protected.\n\nAsk me any of those and I'll pull up the details."
+      ]
+    },
+    "WEBSITE_NAVIGATION": {
+      "variants": [
+        "Everything is in the top navigation once you're signed in: dashboard, marketplace, sell and your profile (from the avatar). The privacy policy, terms and contact links are in the footer of every page."
+      ]
+    },
+    "UNKNOWN": {
+      "variants": []
+    }
+  },
+  "fallbacks": {
+    "unknown": "I'm not fully sure what you mean. Could you rephrase that?",
+    "unknown_hint": "I'm not fully sure what you mean. Could you rephrase that? I can help with coupons, selling, earnings, payouts, purchases, support or your account.",
+    "low_confidence": "I can help with that, but I need a little more detail. Are you asking about buying, selling, payouts, or your account?",
+    "tool_unavailable": "I couldn't retrieve that information right now. Please try again shortly.",
+    "tool_denied": "I can't look that up for you. I can only show you your own account data.",
+    "empty_message": "Could you add a little more detail?",
+    "internal_error": "Something went wrong on my side while handling that. Please try again in a moment.",
+    "clarify_brand": "Which brand are you interested in? For example \u201cshow me Nike coupons\u201d.",
+    "clarify_topic": "Are you asking about buying, selling, payouts, or your account?"
+  },
+  "blocked": {
+    "prompt_injection": "I can't share or change my internal instructions. Happy to help with SaveHatke though \u2014 coupons, selling, earnings, payouts or your account.",
+    "system_prompt_disclosure": "I can't share my internal instructions or configuration. I can help with anything about SaveHatke.",
+    "secret_disclosure": "I can't share credentials, keys or configuration \u2014 none of that is available through chat.",
+    "token_disclosure": "I can't display session tokens or cookies. If you're having trouble staying signed in, try signing out and back in.",
+    "otp_disclosure": "I can't show one-time codes. You'll receive those directly on your registered device.",
+    "backup_code_disclosure": "I can't display backup codes. You can view or regenerate them from your account security settings while signed in.",
+    "cross_user_data": "I can only show you your own account data. I can't look up anyone else's.",
+    "coupon_code_disclosure": "Coupon codes are released only once a purchase is authorised. I can't show a code before then.",
+    "privilege_escalation": "I can't approve, reject or change anything \u2014 those decisions belong to the SaveHatke team and the backend. I can only look things up and explain them.",
+    "admin_sos_disclosure": "I don't have access to administrator or emergency information.",
+    "auth_bypass": "Access is controlled by your signed-in session, and I can't bypass or change it.",
+    "unauthorized_action": "I can't take actions on your behalf \u2014 no submitting forms, changing settings or moving money. I can look up information and explain how things work.",
+    "default": "I can't help with that request. I can answer questions about coupons, selling, earnings, payouts, support and your account."
+  }
+}

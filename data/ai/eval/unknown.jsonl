@@ -1,0 +1,30 @@
+{"text": "what is the weather in mumbai tomorrow", "reason": "weather"}
+{"text": "write me a poem about the sea", "reason": "creative writing"}
+{"text": "explain quantum entanglement", "reason": "science"}
+{"text": "what is the capital of france", "reason": "general knowledge"}
+{"text": "who won the world cup in 2011", "reason": "sports trivia"}
+{"text": "solve this equation 2x + 5 = 17", "reason": "maths"}
+{"text": "translate this sentence into german", "reason": "translation"}
+{"text": "write a python script to sort a list", "reason": "coding"}
+{"text": "what is the best laptop for gaming", "reason": "product advice"}
+{"text": "tell me a joke", "reason": "entertainment"}
+{"text": "recommend a good movie to watch", "reason": "entertainment"}
+{"text": "how do i cook biryani", "reason": "cooking"}
+{"text": "what time is it in london", "reason": "time"}
+{"text": "summarise the history of the roman empire", "reason": "history"}
+{"text": "who is the current prime minister", "reason": "politics"}
+{"text": "what is the meaning of life", "reason": "philosophy"}
+{"text": "help me write an email to my landlord", "reason": "writing"}
+{"text": "what is the price of bitcoin right now", "reason": "finance"}
+{"text": "create a workout plan for me", "reason": "fitness planning"}
+{"text": "what is the tallest mountain in the world", "reason": "geography"}
+{"text": "can you draw a picture of a cat", "reason": "image request"}
+{"text": "how do i fix a leaking tap", "reason": "home repair"}
+{"text": "what are the symptoms of a cold", "reason": "health"}
+{"text": "asdfghjkl qwerty", "reason": "gibberish"}
+{"text": "hello world program in java", "reason": "coding"}
+{"text": "give me a list of indian festivals", "reason": "general knowledge"}
+{"text": "what is the stock price of tesla", "reason": "finance"}
+{"text": "how tall is the eiffel tower", "reason": "general knowledge"}
+{"text": "play some music for me", "reason": "media"}
+{"text": "book me a table at a restaurant tonight", "reason": "booking"}

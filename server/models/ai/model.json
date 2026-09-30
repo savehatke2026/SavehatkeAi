@@ -1,0 +1,21 @@
+{
+  "version": "3.0.0",
+  "name": "savehatke-ai",
+  "algorithm": "tfidf-knn-cosine + rule-boost + knowledge retrieval",
+  "trainedAt": "2026-09-18T14:58:29.966Z",
+  "vocabularySize": 458,
+  "intents": 25,
+  "trainingExamples": 646,
+  "selfCheckAccuracy": 0.9736,
+  "thresholds": {
+    "high": 0.8,
+    "medium": 0.55
+  },
+  "files": {
+    "classifier": "weights/classifier.json",
+    "vocabulary": "vocabulary.json",
+    "intents": "intents.json",
+    "knowledge": "../../../data/ai/knowledge.json",
+    "responses": "../../../data/ai/responses.json"
+  }
+}

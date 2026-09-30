@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat — SaveHatke AI</title>
+  <meta name="description" content="Talk to SaveHatke AI — a private, self-controlled model that runs on your device.">
+  <meta name="theme-color" content="#060d1f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-page">
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap" style="max-width: 860px;">
+      <a class="brand" href="index.html" aria-label="SaveHatke AI home">
+        <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="28" height="28" rx="8" fill="#00e676"/>
+          <path d="M10 11.6a6 6 0 0 1 12 0V17a6 6 0 0 1-4.7 5.86l-.5 1.64a.9.9 0 0 1-1.6 0l-.5-1.64A6 6 0 0 1 10 17v-5.4Z" fill="#fff"/>
+          <circle cx="13.2" cy="14" r="1.3" fill="#00e676"/>
+          <circle cx="18.8" cy="14" r="1.3" fill="#00e676"/>
+        </svg>
+        <span class="brand-name">SaveHatke<em>&nbsp;AI</em></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li data-nav-auth="guest"><a class="btn btn-secondary btn-sm" href="login.html">Login</a></li>
+          <li data-nav-auth="user" hidden><button class="nav-link nav-link-btn" type="button" id="memory-btn">Memory</button></li>
+          <li data-nav-auth="user" hidden><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li data-nav-auth="user" hidden><a class="avatar" href="profile.html" data-avatar>?</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <div class="model-status" id="model-status" role="status" aria-live="polite" hidden>
+      <div class="model-status-row">
+        <span class="model-status-text" id="model-status-text"></span>
+        <button class="btn btn-primary btn-sm" type="button" id="model-load-btn" hidden>Load SaveHatke AI</button>
+      </div>
+      <div class="model-progress"><div class="model-progress-bar" id="model-progress-bar"></div></div>
+    </div>
+
+    <div class="chat-scroll" id="chat-scroll">
+      <div class="chat-intro" id="chat-intro">
+        <h1>How can I help?</h1>
+        <p>Ask SaveHatke AI anything. Your messages are processed by a real model
+           running privately on your own device — nothing is sent to a third-party AI service.</p>
+        <div class="chips">
+          <button class="chip" type="button" data-prompt="Explain how you work and where you run.">How do you work?</button>
+          <button class="chip" type="button" data-prompt="Write a Python function that returns the nth Fibonacci number, with a short explanation.">Write some code</button>
+          <button class="chip" type="button" data-prompt="What is 18.5% of 2400?">Do a calculation</button>
+        </div>
+      </div>
+
+      <div class="chat-thread" id="chat-thread" aria-live="polite"></div>
+    </div>
+
+    <div class="composer-wrap">
+      <form class="composer" id="composer">
+        <label class="sr-only" for="chat-input">Message SaveHatke AI</label>
+        <textarea id="chat-input" rows="1" placeholder="Message SaveHatke AI…" autocomplete="off"></textarea>
+        <button class="composer-send" id="composer-send" type="submit" aria-label="Send message">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </button>
+        <button class="composer-stop" id="composer-stop" type="button" aria-label="Stop generating" hidden>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+        </button>
+      </form>
+
+      <div class="composer-meta">
+        <span>SaveHatke AI can make mistakes. Verify important information.</span>
+        <button class="btn btn-ghost btn-sm" type="button" id="new-chat">New chat</button>
+      </div>
+    </div>
+  </main>
+
+  <dialog class="memory-dialog" id="memory-dialog">
+    <form method="dialog" class="memory-head">
+      <h2>Memory</h2>
+      <button class="msg-ctl" id="memory-close" value="close" type="submit">Close</button>
+    </form>
+    <p class="memory-note">
+      Notes you save here are added to the assistant's context on every chat.
+      Stored privately in this browser for your account. (Server-side sync to
+      the Google Sheets <code>Memory</code> tab is a documented next step.)
+    </p>
+    <label class="memory-toggle">
+      <input type="checkbox" id="memory-enabled" checked> Use my saved memory
+    </label>
+    <div class="memory-add-row">
+      <input type="text" id="memory-input" maxlength="500" placeholder="e.g. I prefer concise answers and Python examples.">
+      <button class="btn btn-primary btn-sm" id="memory-add" type="button">Add</button>
+    </div>
+    <div class="memory-list" id="memory-list"></div>
+  </dialog>
+
+  <script src="core.js" defer></script>
+  <script src="ai/chat-app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{"text": "Show Nykaa coupons under ₹200", "intent": "SEARCH_COUPON", "entities": {"brand": "Nykaa", "maxPrice": 200, "category": "beauty"}}
+{"text": "show me nike coupons", "intent": "SEARCH_COUPON", "entities": {"brand": "Nike", "category": "fashion"}}
+{"text": "any nykaa coupons", "intent": "SEARCH_COUPON", "entities": {"brand": "Nykaa", "category": "beauty"}}
+{"text": "do you have amazon coupons", "intent": "SEARCH_COUPON", "entities": {"brand": "Amazon", "category": "shopping"}}
+{"text": "find flipkart coupons below 500", "intent": "SEARCH_COUPON", "entities": {"brand": "Flipkart", "maxPrice": 500, "category": "shopping"}}
+{"text": "show coupons under ₹100", "intent": "SEARCH_COUPON", "entities": {"maxPrice": 100}}
+{"text": "coupons less than 250 rupees", "intent": "SEARCH_COUPON", "entities": {"maxPrice": 250}}
+{"text": "show me swiggy coupons", "intent": "SEARCH_COUPON", "entities": {"brand": "Swiggy", "category": "food"}}
+{"text": "any zomato deals", "intent": "SEARCH_COUPON", "entities": {"brand": "Zomato", "category": "food"}}
+{"text": "show travel coupons", "intent": "SEARCH_COUPON", "entities": {"category": "travel"}}
+{"text": "do you have electronics coupons", "intent": "SEARCH_COUPON", "entities": {"category": "electronics"}}
+{"text": "show me beauty coupons under 300", "intent": "SEARCH_COUPON", "entities": {"category": "beauty", "maxPrice": 300}}
+{"text": "search myntra coupons over 1000", "intent": "SEARCH_COUPON", "entities": {"brand": "Myntra", "minPrice": 1000, "category": "fashion"}}
+{"text": "any coupons expiring today", "intent": "SEARCH_COUPON", "entities": {"expiresBefore": "today"}}
+{"text": "show coupons expiring this week", "intent": "SEARCH_COUPON", "entities": {"expiresBefore": "this week"}}
+{"text": "bookmyshow coupons dikhao", "intent": "SEARCH_COUPON", "entities": {"brand": "BookMyShow", "category": "entertainment"}}
+{"text": "nike ke coupons under 200", "intent": "SEARCH_COUPON", "entities": {"brand": "Nike", "maxPrice": 200}}
+{"text": "show me grocery coupons below 150", "intent": "SEARCH_COUPON", "entities": {"category": "grocery", "maxPrice": 150}}
+{"text": "what is the value of the Ajio coupon", "intent": "COUPON_DETAILS", "entities": {"brand": "Ajio"}}
+{"text": "when does the Nike coupon expire", "intent": "COUPON_DETAILS", "entities": {"brand": "Nike"}}
+{"text": "tell me about coupon SH-EXAMPLE1", "intent": "COUPON_DETAILS", "entities": {"couponId": "SH-EXAMPLE1"}}
+{"text": "details for listing 4821", "intent": "COUPON_DETAILS", "entities": {"couponId": "4821"}}
+{"text": "can I sell a coupon", "intent": "SELL_ELIGIBILITY", "entities": {}}
+{"text": "am I eligible to sell", "intent": "SELL_ELIGIBILITY", "entities": {}}
+{"text": "can I sell my Nykaa coupon", "intent": "SELL_ELIGIBILITY", "entities": {"brand": "Nykaa"}}
+{"text": "how do I sell my nike coupon", "intent": "SELL_COUPON", "entities": {"brand": "Nike"}}
+{"text": "i want to sell a swiggy coupon worth 500", "intent": "SELL_COUPON", "entities": {"brand": "Swiggy", "price": 500}}
+{"text": "check submission TKT-4471", "intent": "SUBMISSION_STATUS", "entities": {"ticketId": "4471"}}
+{"text": "status of my submission #2210", "intent": "SUBMISSION_STATUS", "entities": {"ticketId": "2210"}}
+{"text": "did support reply to ticket 8891", "intent": "SUPPORT_TICKETS", "entities": {"ticketId": "8891"}}
+{"text": "my support ticket TKT-3312", "intent": "SUPPORT_TICKETS", "entities": {"ticketId": "3312"}}
+{"text": "where is my payout", "intent": "PAYOUT_STATUS", "entities": {}}
+{"text": "mera payout kab milega", "intent": "PAYOUT_STATUS", "entities": {}}
+{"text": "how much have I earned", "intent": "EARNINGS", "entities": {}}
+{"text": "show my purchases from last month", "intent": "PURCHASE_HISTORY", "entities": {"dateRange": "last month"}}
+{"text": "what did I buy yesterday", "intent": "PURCHASE_HISTORY", "entities": {"date": "yesterday"}}
+{"text": "track the price of this product", "intent": "PRICE_TRACKER", "entities": {"product": "this product"}}
+{"text": "track the price of Nike Air Max on Amazon", "intent": "PRICE_TRACKER", "entities": {"product": "Nike Air Max", "brand": "Nike", "platform": "Amazon"}}
+{"text": "set a price alert for the Ajio listing", "intent": "PRICE_TRACKER", "entities": {"brand": "Ajio"}}
+{"text": "where is the dashboard on the website", "intent": "WEBSITE_NAVIGATION", "entities": {"platform": "website"}}
+{"text": "how do I reach the marketplace page in the app", "intent": "WEBSITE_NAVIGATION", "entities": {"platform": "app"}}
+{"text": "how do I enable 2FA on my account", "intent": "TWO_FACTOR_AUTH", "entities": {}}
+{"text": "i want a refund for my purchase from 12 Jan", "intent": "REFUND", "entities": {"date": "12 Jan"}}
+{"text": "is the site down today", "intent": "MAINTENANCE", "entities": {"date": "today"}}

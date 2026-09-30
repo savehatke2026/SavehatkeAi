@@ -1,0 +1,25 @@
+{"text": "show me Lenskart coupons below 400", "entities": {"brand": "Lenskart", "maxPrice": 400}}
+{"text": "any Croma coupons under 1500", "entities": {"brand": "Croma", "maxPrice": 1500}}
+{"text": "find Meesho coupons", "entities": {"brand": "Meesho"}}
+{"text": "coupons for BookMyShow", "entities": {"brand": "BookMyShow"}}
+{"text": "show me PVR coupons over 500", "entities": {"brand": "PVR", "minPrice": 500}}
+{"text": "bigbasket coupons dikhao", "entities": {"brand": "BigBasket"}}
+{"text": "show me travel coupons under 1000", "entities": {"category": "travel", "maxPrice": 1000}}
+{"text": "any entertainment deals", "entities": {"category": "entertainment"}}
+{"text": "show me footwear coupons", "entities": {"category": "fashion"}}
+{"text": "electronics coupons below 5000", "entities": {"category": "electronics", "maxPrice": 5000}}
+{"text": "what is the value of the puma coupon", "entities": {"brand": "Puma"}}
+{"text": "when does the Myntra coupon expire", "entities": {"brand": "Myntra"}}
+{"text": "details for coupon SH-EXAMPLE2", "entities": {"couponId": "SH-EXAMPLE2"}}
+{"text": "check submission TKT-9911", "entities": {"ticketId": "9911"}}
+{"text": "status of my ticket 7788", "entities": {"ticketId": "7788"}}
+{"text": "did support reply to ticket TKT-2048", "entities": {"ticketId": "2048"}}
+{"text": "can i sell my amazon coupon", "entities": {"brand": "Amazon"}}
+{"text": "i want to sell a zomato coupon", "entities": {"brand": "Zomato"}}
+{"text": "how do i sell a flipkart coupon worth 300", "entities": {"brand": "Flipkart", "price": 300}}
+{"text": "show my purchases from last week", "entities": {"dateRange": "last week"}}
+{"text": "what did i buy yesterday", "entities": {"date": "yesterday"}}
+{"text": "track the price of the adidas shoes on flipkart", "entities": {"brand": "Adidas"}}
+{"text": "set a price alert for a decathlon item", "entities": {"brand": "Decathlon"}}
+{"text": "is the site down today", "entities": {"date": "today"}}
+{"text": "how do i reach the marketplace in the app", "entities": {"platform": "app"}}
